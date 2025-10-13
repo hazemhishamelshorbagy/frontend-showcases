@@ -1,4 +1,4 @@
-# Marketing / Social Media Use Cases
+# Marketing / Social Media Show Cases
 
 This folder contains **frontend use cases focused on marketing and social media applications**.  
 Each use case demonstrates common features and UI patterns for marketing dashboards, campaign management, and social media automation.  
