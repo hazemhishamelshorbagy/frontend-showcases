@@ -1,189 +1,121 @@
-Here’s your **complete, copy-paste-ready `README.md`** — exactly as a polished GitHub-ready file 👇
+# 🌐 Social Post Scheduler (Postiz Clone)
 
----
+A **modern social media management platform** — inspired by [Postiz.com](https://postiz.com/) — built to help users **plan, create, schedule, and analyze** social media posts from one unified dashboard.
 
-````markdown
-# 🗓️ Social Post Scheduler (Postiz-Inspired)
-
-A **modern social media management platform** built with **Next.js + TypeScript**, inspired by [Postiz](https://postiz.com/).  
-This project demonstrates **frontend architecture, real-world UI/UX**, and **mock API design** for SaaS-level applications.
+This is a **frontend showcase project**, focusing on UI/UX architecture, state management, and real-world SaaS patterns using **Next.js 14 (App Router)** and **Shadcn UI**.
 
 ---
 
 ## 🚀 Overview
 
-The **Social Post Scheduler** enables users to **plan, create, and manage posts** across multiple social media platforms — all from a single dashboard.
+The **Social Post Scheduler** is a demo SaaS app that allows users to:
 
-It’s part of the **Frontend Use Case Portfolio**, showcasing clean architecture, reusable components, and scalable UI patterns.
+- Plan and schedule posts visually via a **calendar interface**
+- Create and manage multi-platform content (Facebook, Instagram, LinkedIn, Twitter/X)
+- Preview how posts look across platforms
+- View **mock analytics** (likes, comments, shares)
+- Demonstrate a scalable **frontend architecture** suitable for production-grade SaaS
+
+> 🧠 Designed as part of a **Frontend Use Case Portfolio** to demonstrate senior-level frontend engineering, component architecture, and state design.
 
 ---
 
-## 🎯 Core Features
+## ✨ Core Features (MVP)
 
 | Feature | Description |
 |----------|--------------|
-| 🏠 **Dashboard** | Overview of all posts (drafts, scheduled, published). |
-| 🗓️ **Calendar Scheduler** | Drag-and-drop interface for rescheduling posts. |
-| ✍️ **Post Composer** | Create text/image posts and schedule publishing. |
-| 📊 **Analytics** | View mock engagement metrics like likes and shares. |
-| 🔗 **Platform Previews** | Preview how posts look on Facebook, Instagram, LinkedIn, or X (Twitter). |
-| 👤 **Auth Pages** | Basic mock login & signup flow (no backend). |
-
----
-
-## 🧭 Sitemap (Feature Flow)
-
-```text
-/
-├── (auth)
-│   ├── /login
-│   └── /register
-│
-└── (dashboard)
-    ├── /               → Dashboard Overview
-    ├── /calendar       → Visual post scheduler
-    ├── /posts          → All posts (drafts, scheduled, published)
-    ├── /analytics      → Engagement insights & performance
-    └── /settings       → Manage accounts, connected platforms
-````
-
-> 🧩 Each route corresponds to a **feature module** — cleanly separated with its own components, types, and store.
-
----
-
-## 🏗️ Folder Structure (Feature-Based)
-
-```text
-social-post-scheduler/
-│
-├── app/
-│   ├── (auth)/                  # Authentication pages
-│   │   ├── login/
-│   │   └── register/
-│   │
-│   ├── (dashboard)/             # Authenticated area layout
-│   │   ├── page.tsx             # Dashboard overview
-│   │   ├── calendar/            # Calendar scheduling feature
-│   │   ├── posts/               # Post management
-│   │   ├── analytics/           # Analytics dashboard
-│   │   └── settings/            # User/platform settings
-│   │
-│   └── api/                     # Mock API routes
-│       ├── posts/
-│       ├── analytics/
-│       └── scheduler/
-│
-├── components/                  # Reusable UI components
-│   ├── ui/                      # Base UI (button, modal, input, card)
-│   ├── post/                    # Post composer, preview, card
-│   ├── calendar/                # Calendar grid, event item
-│   └── charts/                  # Analytics visuals
-│
-├── store/                       # Zustand state stores
-├── lib/                         # Utils, formatters, mock data helpers
-├── types/                       # Shared TypeScript interfaces
-└── README.md
-```
-
----
-
-## 🧠 Data Models
-
-```ts
-// types/post.ts
-export interface Post {
-  id: string;
-  platform: 'facebook' | 'instagram' | 'linkedin' | 'twitter';
-  content: string;
-  media?: string;
-  scheduledAt: string;
-  status: 'draft' | 'scheduled' | 'published';
-  analytics?: {
-    likes: number;
-    comments: number;
-    shares: number;
-  };
-}
-```
-
----
-
-## 📊 Mock API Endpoints
-
-| Endpoint          | Method       | Description             |
-| ----------------- | ------------ | ----------------------- |
-| `/api/posts`      | GET          | Fetch all posts         |
-| `/api/posts`      | POST         | Add a new post          |
-| `/api/posts/[id]` | PUT / DELETE | Update or delete post   |
-| `/api/analytics`  | GET          | Retrieve mock analytics |
-| `/api/scheduler`  | GET / POST   | Handle post scheduling  |
+| 🗓️ **Dashboard Calendar** | Visualize all scheduled posts using a drag-and-drop calendar view |
+| ✍️ **Create Post Modal** | Add posts with text, images, and scheduled publish times |
+| 🔄 **Drag & Drop Rescheduling** | Change publishing dates directly from the calendar |
+| 💬 **Multi-Platform Previews** | Simulate how posts appear on Facebook, Instagram, LinkedIn, and Twitter |
+| 📊 **Analytics Dashboard** | Display mock metrics like reach, engagement, likes, and shares |
+| 💾 **Mock API Integration** | Simulate CRUD actions (create, edit, delete posts) via mock Next.js API routes |
 
 ---
 
 ## 🧩 Tech Stack
 
-| Layer          | Technology                  |
-| -------------- | --------------------------- |
-| Framework      | **Next.js 14 (App Router)** |
-| Language       | **TypeScript**              |
-| Styling        | **TailwindCSS + Shadcn/UI** |
-| Charts         | **Recharts**                |
-| State          | **Zustand**                 |
-| API Simulation | **Next.js API Routes**      |
-| Icons          | **Lucide React**            |
+| Layer | Technologies |
+|--------|---------------|
+| **Framework** | Next.js 14 (App Router) |
+| **Language** | TypeScript |
+| **UI / Styling** | TailwindCSS + Shadcn/UI Components |
+| **State Management** | Zustand (lightweight global state) |
+| **Data Visualization** | Recharts / Chart.js |
+| **Mock Backend** | Next.js API Routes + Static JSON |
+| **Optional AI Integration** | OpenAI API for caption & idea generation |
 
 ---
 
-## 🎨 UI Highlights
+## 📁 Folder Structure
 
-* Responsive dashboard & modern layout
-* Drag-and-drop calendar scheduling
-* Multi-platform post previews
-* Interactive charts for engagement analytics
-* Clean UI system using Shadcn components
+social-post-scheduler/
+│
+├── README.md
+├── package.json
+├── tsconfig.json
+├── public/ # Static assets
+│ └── icons/, images/
+│
+├── app/ # Next.js App Router
+│ ├── layout.tsx
+│ ├── page.tsx
+│ ├── dashboard/
+│ │ ├── page.tsx
+│ │ ├── calendar/
+│ │ └── analytics/
+│ ├── posts/
+│ │ ├── page.tsx
+│ │ └── [id]/
+│ ├── api/ # Mock API endpoints
+│ │ ├── posts/route.ts
+│ │ ├── posts/[id]/route.ts
+│ │ ├── analytics/route.ts
+│ │ └── scheduler/route.ts
+│
+├── src/
+│ ├── components/ # Reusable components
+│ │ ├── Calendar/
+│ │ ├── PostCard/
+│ │ ├── CreatePostModal/
+│ │ ├── AnalyticsChart/
+│ │ └── Navbar/
+│ ├── store/ # Zustand store
+│ │ └── postStore.ts
+│ ├── types/ # TypeScript interfaces
+│ │ ├── post.ts
+│ │ └── analytics.ts
+│ └── utils/ # Helpers & mock data
+│ ├── mockData.ts
+│ └── formatDate.ts
+└── ...
+
 
 ---
 
-## ⚙️ Installation
+## 🧠 UI / Interaction Highlights
+
+- **Responsive layout** optimized for both desktop and tablet
+- **Smooth animations** using Framer Motion and Shadcn UI transitions
+- **Drag-and-drop rescheduling** (React Beautiful DnD / DnD Kit)
+- **Dynamic modals and forms** with validation
+- **Analytics charts** visualizing mock engagement data
+- **Theming & clean design** inspired by Postiz
+
+---
+
+## ⚙️ How to Run Locally
 
 ```bash
-# 1️⃣ Clone the repository
+# 1. Clone the repository
 git clone https://github.com/hazemhishamelshorbagy/social-post-scheduler.git
 cd social-post-scheduler
 
-# 2️⃣ Install dependencies
-npm install --legacy-peer-deps
+# 2. Install dependencies
+npm install
 
-# 3️⃣ Start development server
+# 3. Run the development server
 npm run dev
 
-# 4️⃣ Open in browser
+# 4. Open your browser
 http://localhost:3000
-```
-
----
-
-## 🧭 Roadmap
-
-| Phase   | Feature                                     | Status |
-| ------- | ------------------------------------------- | ------ |
-| MVP     | Dashboard, Calendar, Analytics              | ✅      |
-| Phase 2 | AI Caption Generator                        | ⏳      |
-| Phase 3 | Team Collaboration & Roles                  | 🔜     |
-| Phase 4 | Social API Integrations (Meta, LinkedIn, X) | 🔜     |
-| Phase 5 | Export Reports (PDF, CSV)                   | 🔜     |
-
----
-
-## 💡 Vision
-
-This project is part of the **Frontend Use Case Portfolio** —
-a curated collection of **real-world SaaS UI demos** built to demonstrate scalable **frontend architecture, design systems, and automation workflows**.
-
-```
-
----
-
-Would you like me to add a **visual data flow diagram (ASCII or image)** next (e.g., how posts move from “Create → Schedule → Analytics”)?  
-It’ll make the README even more complete for your portfolio.
-```
