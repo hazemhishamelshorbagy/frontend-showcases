@@ -1,100 +1,189 @@
-# Social Post Scheduler
+Here’s your **complete, copy-paste-ready `README.md`** — exactly as a polished GitHub-ready file 👇
 
-A frontend demo of a **Social Post Scheduler** — a platform that allows users to plan, create, schedule, and manage social media posts across multiple platforms from a single dashboard.
+---
 
-This project is part of the **Frontend Use Case Portfolio**, showcasing advanced UI/UX, state management, and interactive components.
+````markdown
+# 🗓️ Social Post Scheduler (Postiz-Inspired)
+
+A **modern social media management platform** built with **Next.js + TypeScript**, inspired by [Postiz](https://postiz.com/).  
+This project demonstrates **frontend architecture, real-world UI/UX**, and **mock API design** for SaaS-level applications.
 
 ---
 
 ## 🚀 Overview
 
-The Social Post Scheduler demo is designed to highlight:
+The **Social Post Scheduler** enables users to **plan, create, and manage posts** across multiple social media platforms — all from a single dashboard.
 
-- **Post creation**: Text editor, media uploads, and scheduled publishing.
-- **Calendar scheduling**: Drag-and-drop rescheduling of posts.
-- **Multi-platform previews**: Visual mock-ups for Facebook, Instagram, LinkedIn, and Twitter.
-- **Analytics dashboard**: Mocked engagement metrics (likes, comments, shares).
-
-This demo focuses on **frontend complexity and UI patterns** while using mock data to simulate real-world interactions.
+It’s part of the **Frontend Use Case Portfolio**, showcasing clean architecture, reusable components, and scalable UI patterns.
 
 ---
 
-## 🛠️ Features (MVP)
+## 🎯 Core Features
 
-- **Dashboard Calendar** – Visualize scheduled posts in a calendar view.
-- **Create Post Modal** – Add new posts with text, images, and scheduled time.
-- **Drag & Drop Rescheduling** – Easily move posts to new dates/times.
-- **Platform Previews** – Static previews for multiple social media platforms.
-- **Mock Analytics** – Charts showing engagement metrics (likes, comments, shares).
-
----
-
-## 💻 Tech Stack
-
-- **Frontend:** Next.js, React, TypeScript  
-- **UI / Styling:** TailwindCSS, Shadcn UI  
-- **State Management:** Zustand / React Context  
-- **Charts & Data Visualization:** Recharts / Chart.js  
-- **Mock Data:** JSON / Local storage  
-
-> Optional: Integrate OpenAI API for AI-generated post suggestions.
+| Feature | Description |
+|----------|--------------|
+| 🏠 **Dashboard** | Overview of all posts (drafts, scheduled, published). |
+| 🗓️ **Calendar Scheduler** | Drag-and-drop interface for rescheduling posts. |
+| ✍️ **Post Composer** | Create text/image posts and schedule publishing. |
+| 📊 **Analytics** | View mock engagement metrics like likes and shares. |
+| 🔗 **Platform Previews** | Preview how posts look on Facebook, Instagram, LinkedIn, or X (Twitter). |
+| 👤 **Auth Pages** | Basic mock login & signup flow (no backend). |
 
 ---
 
-## 📂 Folder Structure
+## 🧭 Sitemap (Feature Flow)
 
+```text
+/
+├── (auth)
+│   ├── /login
+│   └── /register
+│
+└── (dashboard)
+    ├── /               → Dashboard Overview
+    ├── /calendar       → Visual post scheduler
+    ├── /posts          → All posts (drafts, scheduled, published)
+    ├── /analytics      → Engagement insights & performance
+    └── /settings       → Manage accounts, connected platforms
+````
+
+> 🧩 Each route corresponds to a **feature module** — cleanly separated with its own components, types, and store.
+
+---
+
+## 🏗️ Folder Structure (Feature-Based)
+
+```text
 social-post-scheduler/
 │
-├── README.md ← Project overview
-├── package.json
-├── tsconfig.json
-├── public/ ← Images & icons
-├── src/
-│ ├── components/ ← Reusable UI components
-│ │ ├── Calendar/
-│ │ ├── PostCard/
-│ │ ├── Modal/
-│ │ └── AnalyticsChart/
-│ ├── pages/ ← Next.js pages
-│ │ ├── index.tsx
-│ │ └── posts/
-│ ├── store/ ← Zustand store or context
-│ └── utils/ ← Helper functions & mock data
+├── app/
+│   ├── (auth)/                  # Authentication pages
+│   │   ├── login/
+│   │   └── register/
+│   │
+│   ├── (dashboard)/             # Authenticated area layout
+│   │   ├── page.tsx             # Dashboard overview
+│   │   ├── calendar/            # Calendar scheduling feature
+│   │   ├── posts/               # Post management
+│   │   ├── analytics/           # Analytics dashboard
+│   │   └── settings/            # User/platform settings
+│   │
+│   └── api/                     # Mock API routes
+│       ├── posts/
+│       ├── analytics/
+│       └── scheduler/
+│
+├── components/                  # Reusable UI components
+│   ├── ui/                      # Base UI (button, modal, input, card)
+│   ├── post/                    # Post composer, preview, card
+│   ├── calendar/                # Calendar grid, event item
+│   └── charts/                  # Analytics visuals
+│
+├── store/                       # Zustand state stores
+├── lib/                         # Utils, formatters, mock data helpers
+├── types/                       # Shared TypeScript interfaces
 └── README.md
-
-
----
-
-## 🎨 UI / Interaction Highlights
-
-- Drag-and-drop post scheduling  
-- Responsive dashboard for desktop and mobile  
-- Reusable card components for posts  
-- Dynamic analytics charts using mock data  
+```
 
 ---
 
-## 📈 Next Steps / Enhancements
+## 🧠 Data Models
 
-- Integrate AI-powered caption generator  
-- Add team collaboration & approvals  
-- Connect with real social media APIs for posting  
-- Export analytics reports (PDF / CSV)  
+```ts
+// types/post.ts
+export interface Post {
+  id: string;
+  platform: 'facebook' | 'instagram' | 'linkedin' | 'twitter';
+  content: string;
+  media?: string;
+  scheduledAt: string;
+  status: 'draft' | 'scheduled' | 'published';
+  analytics?: {
+    likes: number;
+    comments: number;
+    shares: number;
+  };
+}
+```
 
 ---
 
-## ⚡ How to Run (Frontend Demo)
+## 📊 Mock API Endpoints
+
+| Endpoint          | Method       | Description             |
+| ----------------- | ------------ | ----------------------- |
+| `/api/posts`      | GET          | Fetch all posts         |
+| `/api/posts`      | POST         | Add a new post          |
+| `/api/posts/[id]` | PUT / DELETE | Update or delete post   |
+| `/api/analytics`  | GET          | Retrieve mock analytics |
+| `/api/scheduler`  | GET / POST   | Handle post scheduling  |
+
+---
+
+## 🧩 Tech Stack
+
+| Layer          | Technology                  |
+| -------------- | --------------------------- |
+| Framework      | **Next.js 14 (App Router)** |
+| Language       | **TypeScript**              |
+| Styling        | **TailwindCSS + Shadcn/UI** |
+| Charts         | **Recharts**                |
+| State          | **Zustand**                 |
+| API Simulation | **Next.js API Routes**      |
+| Icons          | **Lucide React**            |
+
+---
+
+## 🎨 UI Highlights
+
+* Responsive dashboard & modern layout
+* Drag-and-drop calendar scheduling
+* Multi-platform post previews
+* Interactive charts for engagement analytics
+* Clean UI system using Shadcn components
+
+---
+
+## ⚙️ Installation
 
 ```bash
-# 1. Clone repo
+# 1️⃣ Clone the repository
 git clone https://github.com/hazemhishamelshorbagy/social-post-scheduler.git
 cd social-post-scheduler
 
-# 2. Install dependencies
-npm install
+# 2️⃣ Install dependencies
+npm install --legacy-peer-deps
 
-# 3. Run development server
+# 3️⃣ Start development server
 npm run dev
 
-# 4. Open in browser
+# 4️⃣ Open in browser
 http://localhost:3000
+```
+
+---
+
+## 🧭 Roadmap
+
+| Phase   | Feature                                     | Status |
+| ------- | ------------------------------------------- | ------ |
+| MVP     | Dashboard, Calendar, Analytics              | ✅      |
+| Phase 2 | AI Caption Generator                        | ⏳      |
+| Phase 3 | Team Collaboration & Roles                  | 🔜     |
+| Phase 4 | Social API Integrations (Meta, LinkedIn, X) | 🔜     |
+| Phase 5 | Export Reports (PDF, CSV)                   | 🔜     |
+
+---
+
+## 💡 Vision
+
+This project is part of the **Frontend Use Case Portfolio** —
+a curated collection of **real-world SaaS UI demos** built to demonstrate scalable **frontend architecture, design systems, and automation workflows**.
+
+```
+
+---
+
+Would you like me to add a **visual data flow diagram (ASCII or image)** next (e.g., how posts move from “Create → Schedule → Analytics”)?  
+It’ll make the README even more complete for your portfolio.
+```
