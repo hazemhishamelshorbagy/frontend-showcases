@@ -1,42 +1,121 @@
-# 🗓️ Social Post Scheduler (Postiz-Inspired)
+# 🌐 Social Post Scheduler (Postiz Clone)
 
-A **modern social media management platform** built with **Next.js + TypeScript**, inspired by [Postiz](https://postiz.com/).  
-This project demonstrates **frontend architecture, real-world UI/UX**, and **mock API design** for SaaS-level applications.
+A **modern social media management platform** — inspired by [Postiz.com](https://postiz.com/) — built to help users **plan, create, schedule, and analyze** social media posts from one unified dashboard.
+
+This is a **frontend showcase project**, focusing on UI/UX architecture, state management, and real-world SaaS patterns using **Next.js 14 (App Router)** and **Shadcn UI**.
 
 ---
 
 ## 🚀 Overview
 
-The **Social Post Scheduler** enables users to **plan, create, and manage posts** across multiple social media platforms — all from a single dashboard.
+The **Social Post Scheduler** is a demo SaaS app that allows users to:
 
-It’s part of the **Frontend Use Case Portfolio**, showcasing clean architecture, reusable components, and scalable UI patterns.
+- Plan and schedule posts visually via a **calendar interface**
+- Create and manage multi-platform content (Facebook, Instagram, LinkedIn, Twitter/X)
+- Preview how posts look across platforms
+- View **mock analytics** (likes, comments, shares)
+- Demonstrate a scalable **frontend architecture** suitable for production-grade SaaS
+
+> 🧠 Designed as part of a **Frontend Use Case Portfolio** to demonstrate senior-level frontend engineering, component architecture, and state design.
 
 ---
 
-## 🎯 Core Features
+## ✨ Core Features (MVP)
 
 | Feature | Description |
 |----------|--------------|
-| 🏠 **Dashboard** | Overview of all posts (drafts, scheduled, published). |
-| 🗓️ **Calendar Scheduler** | Drag-and-drop interface for rescheduling posts. |
-| ✍️ **Post Composer** | Create text/image posts and schedule publishing. |
-| 📊 **Analytics** | View mock engagement metrics like likes and shares. |
-| 🔗 **Platform Previews** | Preview how posts look on Facebook, Instagram, LinkedIn, or X (Twitter). |
-| 👤 **Auth Pages** | Basic mock login & signup flow (no backend). |
+| 🗓️ **Dashboard Calendar** | Visualize all scheduled posts using a drag-and-drop calendar view |
+| ✍️ **Create Post Modal** | Add posts with text, images, and scheduled publish times |
+| 🔄 **Drag & Drop Rescheduling** | Change publishing dates directly from the calendar |
+| 💬 **Multi-Platform Previews** | Simulate how posts appear on Facebook, Instagram, LinkedIn, and Twitter |
+| 📊 **Analytics Dashboard** | Display mock metrics like reach, engagement, likes, and shares |
+| 💾 **Mock API Integration** | Simulate CRUD actions (create, edit, delete posts) via mock Next.js API routes |
 
 ---
 
-## 🧭 Sitemap (Feature Flow)
+## 🧩 Tech Stack
 
-```text
-/
-├── (auth)
-│   ├── /login
-│   └── /register
+| Layer | Technologies |
+|--------|---------------|
+| **Framework** | Next.js 14 (App Router) |
+| **Language** | TypeScript |
+| **UI / Styling** | TailwindCSS + Shadcn/UI Components |
+| **State Management** | Zustand (lightweight global state) |
+| **Data Visualization** | Recharts / Chart.js |
+| **Mock Backend** | Next.js API Routes + Static JSON |
+| **Optional AI Integration** | OpenAI API for caption & idea generation |
+
+---
+
+## 📁 Folder Structure
+
+social-post-scheduler/
 │
-└── (dashboard)
-    ├── /               → Dashboard Overview
-    ├── /calendar       → Visual post scheduler
-    ├── /posts          → All posts (drafts, scheduled, published)
-    ├── /analytics      → Engagement insights & performance
-    └── /settings       → Manage accounts, connected platforms
+├── README.md
+├── package.json
+├── tsconfig.json
+├── public/ # Static assets
+│ └── icons/, images/
+│
+├── app/ # Next.js App Router
+│ ├── layout.tsx
+│ ├── page.tsx
+│ ├── dashboard/
+│ │ ├── page.tsx
+│ │ ├── calendar/
+│ │ └── analytics/
+│ ├── posts/
+│ │ ├── page.tsx
+│ │ └── [id]/
+│ ├── api/ # Mock API endpoints
+│ │ ├── posts/route.ts
+│ │ ├── posts/[id]/route.ts
+│ │ ├── analytics/route.ts
+│ │ └── scheduler/route.ts
+│
+├── src/
+│ ├── components/ # Reusable components
+│ │ ├── Calendar/
+│ │ ├── PostCard/
+│ │ ├── CreatePostModal/
+│ │ ├── AnalyticsChart/
+│ │ └── Navbar/
+│ ├── store/ # Zustand store
+│ │ └── postStore.ts
+│ ├── types/ # TypeScript interfaces
+│ │ ├── post.ts
+│ │ └── analytics.ts
+│ └── utils/ # Helpers & mock data
+│ ├── mockData.ts
+│ └── formatDate.ts
+└── ...
+
+
+---
+
+## 🧠 UI / Interaction Highlights
+
+- **Responsive layout** optimized for both desktop and tablet
+- **Smooth animations** using Framer Motion and Shadcn UI transitions
+- **Drag-and-drop rescheduling** (React Beautiful DnD / DnD Kit)
+- **Dynamic modals and forms** with validation
+- **Analytics charts** visualizing mock engagement data
+- **Theming & clean design** inspired by Postiz
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/hazemhishamelshorbagy/social-post-scheduler.git
+cd social-post-scheduler
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the development server
+npm run dev
+
+# 4. Open your browser
+http://localhost:3000
