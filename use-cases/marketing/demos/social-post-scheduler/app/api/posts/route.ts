@@ -24,5 +24,5 @@ export async function POST(req: Request) {
     };
 
     addPost(newPost);
-    return NextResponse.json(newPost, { status: 201 });
+    return NextResponse.json(newPost, { headers: { "Content-Type": "application/json" }, status: 201 });
 }
