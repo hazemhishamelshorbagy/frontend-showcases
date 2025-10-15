@@ -1,8 +1,109 @@
-// src/features/analytics/mockData.ts
-import { PostMetrics } from "./types";
+import { AnalyticsItem } from "./types";
 
-export const mockAnalytics: PostMetrics[] = [
-    { postId: "post_1", platform: "facebook", date: "2025-10-25", impressions: 1200, clicks: 200, likes: 150, comments: 12, shares: 8 },
-    { postId: "post_1", platform: "instagram", date: "2025-10-25", impressions: 980, clicks: 110, likes: 90, comments: 8, shares: 4 },
-    { postId: "post_2", platform: "linkedin", date: "2025-10-27", impressions: 450, clicks: 40, likes: 25, comments: 3, shares: 1 }
+export const mockAnalytics: AnalyticsItem[] = [
+    {
+        id: "a1",
+        postId: "p1",
+        platform: "twitter",
+        date: "2025-10-13",
+        metrics: {
+            likes: 120,
+            comments: 18,
+            shares: 22,
+            impressions: 5400,
+            engagementRate: 0.03,
+        },
+        createdAt: "2025-10-13T09:30:00Z",
+        updatedAt: "2025-10-13T09:30:00Z",
+    },
+    {
+        id: "a2",
+        postId: "p2",
+        platform: "linkedin",
+        date: "2025-10-13",
+        metrics: {
+            likes: 240,
+            comments: 36,
+            shares: 18,
+            impressions: 8700,
+            engagementRate: 0.035,
+        },
+        createdAt: "2025-10-13T09:30:00Z",
+        updatedAt: "2025-10-13T09:30:00Z",
+    },
+    {
+        id: "a3",
+        postId: "p3",
+        platform: "instagram",
+        date: "2025-10-14",
+        metrics: {
+            likes: 560,
+            comments: 42,
+            shares: 28,
+            impressions: 15400,
+            engagementRate: 0.041,
+        },
+        createdAt: "2025-10-14T08:15:00Z",
+        updatedAt: "2025-10-14T08:15:00Z",
+    },
+    {
+        id: "a4",
+        postId: "p1",
+        platform: "twitter",
+        date: "2025-10-14",
+        metrics: {
+            likes: 150,
+            comments: 24,
+            shares: 35,
+            impressions: 6200,
+            engagementRate: 0.034,
+        },
+        createdAt: "2025-10-14T10:00:00Z",
+        updatedAt: "2025-10-14T10:00:00Z",
+    },
+    {
+        id: "a5",
+        postId: "p4",
+        platform: "linkedin",
+        date: "2025-10-15",
+        metrics: {
+            likes: 310,
+            comments: 52,
+            shares: 21,
+            impressions: 11200,
+            engagementRate: 0.034,
+        },
+        createdAt: "2025-10-15T07:30:00Z",
+        updatedAt: "2025-10-15T07:30:00Z",
+    },
+    {
+        id: "a6",
+        postId: "p5",
+        platform: "twitter",
+        date: "2025-10-15",
+        metrics: {
+            likes: 190,
+            comments: 16,
+            shares: 12,
+            impressions: 5000,
+            engagementRate: 0.044,
+        },
+        createdAt: "2025-10-15T08:00:00Z",
+        updatedAt: "2025-10-15T08:00:00Z",
+    },
+    {
+        id: "a7",
+        postId: "p6",
+        platform: "instagram",
+        date: "2025-10-15",
+        metrics: {
+            likes: 740,
+            comments: 60,
+            shares: 40,
+            impressions: 19200,
+            engagementRate: 0.043,
+        },
+        createdAt: "2025-10-15T08:45:00Z",
+        updatedAt: "2025-10-15T08:45:00Z",
+    },
 ];
