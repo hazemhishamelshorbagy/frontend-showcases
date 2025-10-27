@@ -1,0 +1,138 @@
+{
+    "cards": [
+        {
+            "id": "card_001",
+            "cardType": "Platinum Rewards",
+            "cardNumber": "**** **** **** 4589",
+            "cardHolder": "John A. Smith",
+            "expiryDate": "09/28",
+            "cvv": "***",
+            "status": "active",
+            "currentBalance": 2458.92,
+            "availableCredit": 17541.08,
+            "creditLimit": 20000.00,
+            "lastPaymentDate": "2025-10-15",
+            "lastPaymentAmount": 1500.00,
+            "dueDate": "2025-11-15",
+            "minimumPayment": 85.00,
+            "apr": 16.99,
+            "rewards": {
+                "cashbackRate": 2.5,
+                "pointsEarned": 45280,
+                "pointsValue": 452.80
+            },
+            "features": [
+                "Travel Insurance",
+                "Purchase Protection",
+                "Extended Warranty",
+                "Airport Lounge Access"
+            ],
+            "design": "platinum",
+            "isContactless": true,
+            "isDigital": true
+        },
+        {
+            "id": "card_002",
+            "cardType": "Cash Back Plus",
+            "cardNumber": "**** **** **** 7823",
+            "cardHolder": "John A. Smith",
+            "expiryDate": "12/27",
+            "cvv": "***",
+            "status": "active",
+            "currentBalance": 1267.34,
+            "availableCredit": 8732.66,
+            "creditLimit": 10000.00,
+            "lastPaymentDate": "2025-10-20",
+            "lastPaymentAmount": 800.00,
+            "dueDate": "2025-11-20",
+            "minimumPayment": 45.00,
+            "apr": 14.99,
+            "rewards": {
+                "cashbackRate": 3.0,
+                "cashbackEarned": 234.56,
+                "categoryBonuses": {
+                    "groceries": 5,
+                    "gas": 3,
+                    "dining": 3
+                }
+            },
+            "features": [
+                "Cash Back Rewards",
+                "Mobile Phone Protection",
+                "Zero Liability Protection"
+            ],
+            "design": "blue",
+            "isContactless": true,
+            "isDigital": true
+        },
+        {
+            "id": "card_003",
+            "cardType": "Business Elite",
+            "cardNumber": "**** **** **** 9456",
+            "cardHolder": "John A. Smith",
+            "expiryDate": "03/27",
+            "cvv": "***",
+            "status": "active",
+            "currentBalance": 7845.23,
+            "availableCredit": 42154.77,
+            "creditLimit": 50000.00,
+            "lastPaymentDate": "2025-10-18",
+            "lastPaymentAmount": 5000.00,
+            "dueDate": "2025-11-18",
+            "minimumPayment": 195.00,
+            "apr": 15.99,
+            "rewards": {
+                "pointsEarned": 98456,
+                "pointsValue": 984.56,
+                "categoryBonuses": {
+                    "travel": 4,
+                    "office": 3,
+                    "advertising": 3
+                }
+            },
+            "features": [
+                "Expense Management Tools",
+                "Employee Cards",
+                "Travel Insurance",
+                "Purchase Protection"
+            ],
+            "design": "black",
+            "isContactless": true,
+            "isDigital": true
+        },
+        {
+            "id": "card_004",
+            "cardType": "Student Rewards",
+            "cardNumber": "**** **** **** 3214",
+            "cardHolder": "Emma Smith",
+            "expiryDate": "07/26",
+            "cvv": "***",
+            "status": "active",
+            "currentBalance": 342.67,
+            "availableCredit": 1657.33,
+            "creditLimit": 2000.00,
+            "lastPaymentDate": "2025-10-22",
+            "lastPaymentAmount": 200.00,
+            "dueDate": "2025-11-22",
+            "minimumPayment": 25.00,
+            "apr": 13.99,
+            "rewards": {
+                "cashbackRate": 1.5,
+                "cashbackEarned": 45.23,
+                "categoryBonuses": {
+                    "books": 5,
+                    "dining": 3,
+                    "streaming": 3
+                }
+            },
+            "features": [
+                "No Annual Fee",
+                "Good Grade Rewards",
+                "Credit Education Tools"
+            ],
+            "design": "green",
+            "isContactless": true,
+            "isDigital": true
+        }
+    ]
+}

@@ -1,0 +1,189 @@
+{
+    "services": {
+        "insurance": {
+            "lifeInsurance": {
+                "id": "ins_001",
+                "type": "Term Life Insurance",
+                "provider": "Guardian Life",
+                "policyNumber": "GL789456123",
+                "status": "active",
+                "coverage": 500000.00,
+                "term": "20 years",
+                "startDate": "2024-01-15",
+                "expiryDate": "2044-01-15",
+                "monthlyPremium": 45.50,
+                "beneficiaries": [
+                    {
+                        "name": "Emma Smith",
+                        "relationship": "Spouse",
+                        "percentage": 100
+                    }
+                ],
+                "features": [
+                    "Convertible to Permanent Life Insurance",
+                    "Terminal Illness Benefit",
+                    "Disability Waiver of Premium"
+                ]
+            },
+            "homeInsurance": {
+                "id": "ins_002",
+                "provider": "HomeGuard Insurance",
+                "policyNumber": "HGI-456789",
+                "status": "active",
+                "coverage": {
+                    "dwelling": 525000.00,
+                    "personalProperty": 262500.00,
+                    "liability": 300000.00
+                },
+                "annualPremium": 2400.00,
+                "deductible": 1000.00,
+                "property": {
+                    "address": "789 Cedar Avenue",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "zipCode": "98102"
+                }
+            }
+        },
+        "safety": {
+            "safeDepositBox": {
+                "id": "sdb_001",
+                "location": "Main Branch - Seattle",
+                "boxNumber": "B-123",
+                "size": "10x15",
+                "annualFee": 75.00,
+                "accessLog": [
+                    {
+                        "date": "2025-10-15",
+                        "time": "14:30",
+                        "authorizedUser": "John Smith"
+                    }
+                ]
+            },
+            "identityProtection": {
+                "id": "idp_001",
+                "provider": "IdentityShield Plus",
+                "status": "active",
+                "monthlyFee": 12.99,
+                "features": [
+                    "Credit Monitoring",
+                    "Dark Web Surveillance",
+                    "Identity Theft Insurance",
+                    "Credit Score Tracking",
+                    "Lost Wallet Protection"
+                ],
+                "lastScan": "2025-10-28"
+            },
+            "fraudProtection": {
+                "enabled": true,
+                "features": [
+                    "Real-time Transaction Monitoring",
+                    "Suspicious Activity Alerts",
+                    "Zero Liability Protection",
+                    "Travel Notifications"
+                ]
+            }
+        },
+        "shopping": {
+            "rewards": {
+                "programName": "BankDash Rewards",
+                "pointsBalance": 45280,
+                "pointsValue": 452.80,
+                "lastEarned": "2025-10-27",
+                "redemptionOptions": [
+                    "Cash Back",
+                    "Travel Bookings",
+                    "Gift Cards",
+                    "Merchandise"
+                ]
+            },
+            "merchantOffers": [
+                {
+                    "id": "off_001",
+                    "merchant": "Amazon",
+                    "discount": "5% Cash Back",
+                    "expiryDate": "2025-12-31",
+                    "terms": "Valid on all purchases"
+                },
+                {
+                    "id": "off_002",
+                    "merchant": "Starbucks",
+                    "discount": "10% Off",
+                    "expiryDate": "2025-11-30",
+                    "terms": "Valid on purchases over $10"
+                }
+            ],
+            "travelBenefits": {
+                "airportLounge": true,
+                "travelInsurance": true,
+                "conciergeService": true,
+                "rentalCarInsurance": true
+            }
+        },
+        "digitalServices": {
+            "onlineBanking": {
+                "status": "active",
+                "lastLogin": "2025-10-28T09:30:00Z",
+                "features": [
+                    "Bill Pay",
+                    "Mobile Check Deposit",
+                    "Peer-to-Peer Payments",
+                    "Account Alerts"
+                ]
+            },
+            "mobileBanking": {
+                "status": "active",
+                "deviceRegistered": "iPhone 18 Pro",
+                "biometricLogin": true,
+                "pushNotifications": true
+            },
+            "billPay": {
+                "status": "active",
+                "scheduledPayments": 3,
+                "payees": 12,
+                "lastPayment": "2025-10-24"
+            }
+        },
+        "financialPlanning": {
+            "advisor": {
+                "name": "Sarah Johnson",
+                "phone": "+1 (206) 555-0199",
+                "email": "sarah.johnson@bankdash.com",
+                "nextAppointment": "2025-11-15T14:00:00Z"
+            },
+            "services": [
+                "Retirement Planning",
+                "Estate Planning",
+                "Tax Planning",
+                "Investment Advisory"
+            ],
+            "documents": {
+                "financialPlan": "2025 Financial Plan.pdf",
+                "lastUpdated": "2025-09-15"
+            }
+        },
+        "subscriptionServices": {
+            "creditMonitoring": {
+                "status": "active",
+                "monthlyFee": 9.99,
+                "lastReport": "2025-10-15",
+                "features": [
+                    "Daily Credit Monitoring",
+                    "Score Change Alerts",
+                    "Report Disputes"
+                ]
+            },
+            "premiumBanking": {
+                "status": "active",
+                "tier": "Platinum",
+                "monthlyFee": 25.00,
+                "benefits": [
+                    "Priority Customer Service",
+                    "Fee Waivers",
+                    "Preferred Rates",
+                    "Exclusive Events"
+                ]
+            }
+        }
+    }
+}

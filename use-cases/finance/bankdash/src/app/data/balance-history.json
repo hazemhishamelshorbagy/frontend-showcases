@@ -1,0 +1,221 @@
+{
+    "balanceHistory": {
+        "summary": {
+            "currentTotal": 341583.89,
+            "previousMonthTotal": 335245.67,
+            "monthlyChange": 6338.22,
+            "monthlyGrowth": 1.89,
+            "yearToDateGrowth": 12.45,
+            "highestBalance": 341583.89,
+            "lowestBalance": 298654.32,
+            "averageBalance": 318456.78
+        },
+        "accounts": {
+            "checking": {
+                "id": "acc_001",
+                "name": "Primary Checking",
+                "currentBalance": 5847.23,
+                "previousBalance": 4567.89,
+                "monthlyChange": 1279.34,
+                "monthlyGrowth": 28.01
+            },
+            "savings": {
+                "id": "acc_002",
+                "name": "Emergency Fund",
+                "currentBalance": 24650.89,
+                "previousBalance": 23890.45,
+                "monthlyChange": 760.44,
+                "monthlyGrowth": 3.18
+            },
+            "moneyMarket": {
+                "id": "acc_003",
+                "name": "High-Yield Savings",
+                "currentBalance": 75320.45,
+                "previousBalance": 73456.78,
+                "monthlyChange": 1863.67,
+                "monthlyGrowth": 2.54
+            },
+            "investment": {
+                "id": "acc_005",
+                "name": "Retirement Portfolio",
+                "currentBalance": 185674.32,
+                "previousBalance": 178234.55,
+                "monthlyChange": 7439.77,
+                "monthlyGrowth": 4.17
+            },
+            "business": {
+                "id": "acc_006",
+                "name": "Business Operations",
+                "currentBalance": 42890.67,
+                "previousBalance": 40890.67,
+                "monthlyChange": 2000.00,
+                "monthlyGrowth": 4.89
+            }
+        },
+        "trends": {
+            "daily": [
+                {
+                    "date": "2025-10-22",
+                    "total": 335245.67,
+                    "change": 1245.67
+                },
+                {
+                    "date": "2025-10-23",
+                    "total": 336890.45,
+                    "change": 1644.78
+                },
+                {
+                    "date": "2025-10-24",
+                    "total": 338123.34,
+                    "change": 1232.89
+                },
+                {
+                    "date": "2025-10-25",
+                    "total": 339567.89,
+                    "change": 1444.55
+                },
+                {
+                    "date": "2025-10-26",
+                    "total": 340234.56,
+                    "change": 666.67
+                },
+                {
+                    "date": "2025-10-27",
+                    "total": 341123.45,
+                    "change": 888.89
+                },
+                {
+                    "date": "2025-10-28",
+                    "total": 341583.89,
+                    "change": 460.44
+                }
+            ],
+            "weekly": [
+                {
+                    "week": "Week 1",
+                    "total": 335245.67,
+                    "change": 3567.89
+                },
+                {
+                    "week": "Week 2",
+                    "total": 337890.45,
+                    "change": 2644.78
+                },
+                {
+                    "week": "Week 3",
+                    "total": 339567.89,
+                    "change": 1677.44
+                },
+                {
+                    "week": "Week 4",
+                    "total": 341583.89,
+                    "change": 2016.00
+                }
+            ],
+            "monthly": [
+                {
+                    "month": "May 2025",
+                    "total": 315678.90,
+                    "change": 4567.89
+                },
+                {
+                    "month": "June 2025",
+                    "total": 322345.67,
+                    "change": 6666.77
+                },
+                {
+                    "month": "July 2025",
+                    "total": 328907.45,
+                    "change": 6561.78
+                },
+                {
+                    "month": "August 2025",
+                    "total": 331234.56,
+                    "change": 2327.11
+                },
+                {
+                    "month": "September 2025",
+                    "total": 335245.67,
+                    "change": 4011.11
+                },
+                {
+                    "month": "October 2025",
+                    "total": 341583.89,
+                    "change": 6338.22
+                }
+            ]
+        },
+        "cashFlow": {
+            "monthly": {
+                "inflow": 8300.00,
+                "outflow": 6584.23,
+                "net": 1715.77,
+                "savingsRate": 20.67
+            },
+            "categories": {
+                "income": [
+                    {
+                        "name": "Salary",
+                        "amount": 5850.00
+                    },
+                    {
+                        "name": "Business Income",
+                        "amount": 2450.00
+                    }
+                ],
+                "expenses": [
+                    {
+                        "name": "Housing",
+                        "amount": 2200.00
+                    },
+                    {
+                        "name": "Transportation",
+                        "amount": 458.73
+                    },
+                    {
+                        "name": "Food & Dining",
+                        "amount": 985.45
+                    },
+                    {
+                        "name": "Bills & Utilities",
+                        "amount": 427.98
+                    },
+                    {
+                        "name": "Other Expenses",
+                        "amount": 2512.07
+                    }
+                ]
+            }
+        },
+        "projections": {
+            "nextMonth": {
+                "expectedTotal": 347890.45,
+                "expectedChange": 6306.56,
+                "expectedGrowth": 1.85
+            },
+            "endOfYear": {
+                "expectedTotal": 362345.67,
+                "expectedChange": 20761.78,
+                "expectedGrowth": 6.08
+            },
+            "factors": [
+                {
+                    "name": "Regular Income",
+                    "impact": 8300.00
+                },
+                {
+                    "name": "Regular Expenses",
+                    "impact": -6584.23
+                },
+                {
+                    "name": "Investment Returns",
+                    "impact": 1850.45
+                },
+                {
+                    "name": "Interest Income",
+                    "impact": 234.56
+                }
+            ]
+        }
+    }
+}

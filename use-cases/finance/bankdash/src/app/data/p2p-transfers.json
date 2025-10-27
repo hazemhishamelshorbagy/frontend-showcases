@@ -1,0 +1,85 @@
+{
+    "p2pTransfers": {
+        "recentContacts": [
+            {
+                "id": "contact_001",
+                "name": "Emma Wilson",
+                "email": "emma.wilson@email.com",
+                "phone": "+1 (206) 555-0234",
+                "lastTransfer": "2025-10-25",
+                "frequency": "frequent"
+            },
+            {
+                "id": "contact_002",
+                "name": "Michael Chen",
+                "email": "michael.chen@email.com",
+                "phone": "+1 (206) 555-0567",
+                "lastTransfer": "2025-10-20",
+                "frequency": "regular"
+            }
+        ],
+        "transferHistory": [
+            {
+                "id": "p2p_001",
+                "date": "2025-10-25",
+                "recipient": {
+                    "id": "contact_001",
+                    "name": "Emma Wilson"
+                },
+                "amount": 125.50,
+                "description": "Dinner split",
+                "status": "completed",
+                "type": "sent"
+            },
+            {
+                "id": "p2p_002",
+                "date": "2025-10-20",
+                "recipient": {
+                    "id": "contact_002",
+                    "name": "Michael Chen"
+                },
+                "amount": 450.00,
+                "description": "Concert tickets",
+                "status": "completed",
+                "type": "sent"
+            },
+            {
+                "id": "p2p_003",
+                "date": "2025-10-18",
+                "sender": {
+                    "id": "contact_001",
+                    "name": "Emma Wilson"
+                },
+                "amount": 75.00,
+                "description": "Group lunch",
+                "status": "completed",
+                "type": "received"
+            }
+        ],
+        "limits": {
+            "daily": {
+                "limit": 2000.00,
+                "used": 575.50,
+                "remaining": 1424.50
+            },
+            "monthly": {
+                "limit": 10000.00,
+                "used": 2345.50,
+                "remaining": 7654.50
+            }
+        },
+        "preferences": {
+            "defaultAccount": "acc_001",
+            "instantTransfer": true,
+            "notifications": {
+                "sent": true,
+                "received": true,
+                "completed": true
+            },
+            "security": {
+                "requirePin": true,
+                "requireVerification": true
+            }
+        }
+    }
+}

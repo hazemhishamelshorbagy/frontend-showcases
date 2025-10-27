@@ -1,0 +1,142 @@
+{
+    "profile": {
+        "personal": {
+            "id": "usr_001",
+            "firstName": "John",
+            "lastName": "Smith",
+            "dateOfBirth": "1990-05-15",
+            "email": "john.smith@email.com",
+            "phone": "+1 (206) 555-0123",
+            "profileImage": "/assets/images/avatars/profile.jpg",
+            "occupation": "Software Engineer",
+            "employmentStatus": "Employed",
+            "employer": "Tech Corp"
+        },
+        "address": {
+            "street": "456 Pine Street",
+            "unit": "Apt 789",
+            "city": "Seattle",
+            "state": "WA",
+            "zipCode": "98101",
+            "country": "United States"
+        },
+        "security": {
+            "lastLogin": "2025-10-28T09:30:00Z",
+            "twoFactorEnabled": true,
+            "loginDevices": [
+                {
+                    "device": "iPhone 18 Pro",
+                    "lastAccess": "2025-10-28T09:30:00Z",
+                    "location": "Seattle, WA",
+                    "trusted": true
+                },
+                {
+                    "device": "MacBook Pro",
+                    "lastAccess": "2025-10-28T08:15:00Z",
+                    "location": "Seattle, WA",
+                    "trusted": true
+                }
+            ],
+            "notificationPreferences": {
+                "email": true,
+                "sms": true,
+                "push": true
+            }
+        },
+        "preferences": {
+            "language": "English",
+            "currency": "USD",
+            "timezone": "America/Los_Angeles",
+            "theme": "light",
+            "alerts": {
+                "largeTransactions": true,
+                "lowBalance": true,
+                "unusualActivity": true,
+                "newDeviceLogin": true,
+                "billReminders": true
+            },
+            "thresholds": {
+                "largeTransactionAmount": 1000,
+                "lowBalanceAmount": 500
+            }
+        },
+        "financialSummary": {
+            "totalAssets": 341583.89,
+            "totalLiabilities": 11571.49,
+            "netWorth": 330012.40,
+            "creditScore": 785,
+            "monthlyIncome": 8300.00,
+            "monthlyExpenses": 4850.00,
+            "savingsGoals": [
+                {
+                    "id": "goal_001",
+                    "name": "Emergency Fund",
+                    "target": 30000.00,
+                    "current": 24650.89,
+                    "deadline": "2026-12-31"
+                },
+                {
+                    "id": "goal_002",
+                    "name": "Home Down Payment",
+                    "target": 100000.00,
+                    "current": 75320.45,
+                    "deadline": "2027-06-30"
+                }
+            ]
+        },
+        "documents": {
+            "recentStatements": [
+                {
+                    "id": "stmt_001",
+                    "type": "Monthly Statement",
+                    "date": "2025-09-30",
+                    "accountId": "acc_001",
+                    "downloadUrl": "/statements/2025-09-acc001.pdf"
+                },
+                {
+                    "id": "stmt_002",
+                    "type": "Credit Card Statement",
+                    "date": "2025-09-30",
+                    "accountId": "card_001",
+                    "downloadUrl": "/statements/2025-09-card001.pdf"
+                }
+            ],
+            "taxDocuments": [
+                {
+                    "id": "tax_001",
+                    "type": "1099-INT",
+                    "year": 2024,
+                    "downloadUrl": "/tax/2024-1099int.pdf"
+                }
+            ]
+        },
+        "beneficiaries": [
+            {
+                "id": "ben_001",
+                "name": "Emma Smith",
+                "relationship": "Spouse",
+                "percentage": 100,
+                "lastUpdated": "2024-03-15"
+            }
+        ],
+        "linkedAccounts": {
+            "externalBanks": [
+                {
+                    "id": "ext_001",
+                    "bankName": "External Bank",
+                    "accountType": "Checking",
+                    "accountNumber": "****5678",
+                    "status": "verified"
+                }
+            ],
+            "investmentPlatforms": [
+                {
+                    "id": "inv_001",
+                    "platform": "Trading Platform",
+                    "status": "linked",
+                    "lastSync": "2025-10-28T00:00:00Z"
+                }
+            ]
+        }
+    }
+}

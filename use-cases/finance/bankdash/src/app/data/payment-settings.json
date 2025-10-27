@@ -1,0 +1,82 @@
+{
+    "paymentSettings": {
+        "templates": [
+            {
+                "id": "tmpl_001",
+                "name": "Rent Payment",
+                "recipient": "Cedar Heights Apartments",
+                "accountNumber": "1234567890",
+                "routingNumber": "087654321",
+                "amount": 2200.00,
+                "description": "Monthly Rent",
+                "category": "Housing",
+                "lastUsed": "2025-10-24"
+            },
+            {
+                "id": "tmpl_002",
+                "name": "Car Payment",
+                "recipient": "Auto Finance Co",
+                "accountNumber": "9876543210",
+                "routingNumber": "123456789",
+                "amount": 645.32,
+                "description": "Auto Loan Payment",
+                "category": "Auto & Transport",
+                "lastUsed": "2025-10-15"
+            }
+        ],
+        "scheduledPayments": [
+            {
+                "id": "schd_001",
+                "templateId": "tmpl_001",
+                "frequency": "monthly",
+                "nextDate": "2025-11-24",
+                "status": "active",
+                "remainingPayments": "ongoing"
+            },
+            {
+                "id": "schd_002",
+                "recipient": "Netflix",
+                "accountId": "acc_001",
+                "amount": 19.99,
+                "frequency": "monthly",
+                "nextDate": "2025-11-28",
+                "description": "Netflix Subscription",
+                "category": "Entertainment",
+                "status": "active",
+                "remainingPayments": "ongoing"
+            }
+        ],
+        "autopay": {
+            "bills": [
+                {
+                    "id": "auto_001",
+                    "provider": "Electric Company",
+                    "accountId": "acc_001",
+                    "lastAmount": 185.45,
+                    "dueDate": "15th",
+                    "status": "active",
+                    "maxAmount": 300.00
+                },
+                {
+                    "id": "auto_002",
+                    "provider": "Water Utility",
+                    "accountId": "acc_001",
+                    "lastAmount": 75.54,
+                    "dueDate": "20th",
+                    "status": "active",
+                    "maxAmount": 150.00
+                }
+            ],
+            "creditCards": [
+                {
+                    "id": "auto_003",
+                    "cardId": "card_001",
+                    "accountId": "acc_001",
+                    "paymentType": "minimum",
+                    "dueDate": "15th",
+                    "status": "active"
+                }
+            ]
+        }
+    }
+}

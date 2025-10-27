@@ -1,0 +1,255 @@
+{
+    "expenseStats": {
+        "summary": {
+            "currentMonth": {
+                "total": 6584.23,
+                "budget": 7500.00,
+                "remaining": 915.77,
+                "averageDaily": 235.15,
+                "monthlyChange": -3.5,
+                "largestExpense": 2200.00,
+                "largestCategory": "Housing"
+            },
+            "previousMonth": {
+                "total": 6825.45,
+                "budget": 7500.00,
+                "remaining": 674.55,
+                "averageDaily": 227.52
+            }
+        },
+        "categoryBreakdown": {
+            "housing": {
+                "name": "Housing",
+                "amount": 2200.00,
+                "percentage": 33.41,
+                "budget": 2300.00,
+                "status": "under_budget",
+                "trend": "stable",
+                "subcategories": {
+                    "rent": 2000.00,
+                    "utilities": 200.00
+                }
+            },
+            "transportation": {
+                "name": "Transportation",
+                "amount": 458.73,
+                "percentage": 6.97,
+                "budget": 500.00,
+                "status": "under_budget",
+                "trend": "decreasing",
+                "subcategories": {
+                    "fuel": 265.23,
+                    "parking": 85.00,
+                    "maintenance": 108.50
+                }
+            },
+            "food": {
+                "name": "Food & Dining",
+                "amount": 985.45,
+                "percentage": 14.97,
+                "budget": 900.00,
+                "status": "over_budget",
+                "trend": "increasing",
+                "subcategories": {
+                    "groceries": 685.45,
+                    "restaurants": 300.00
+                }
+            },
+            "utilities": {
+                "name": "Bills & Utilities",
+                "amount": 427.98,
+                "percentage": 6.50,
+                "budget": 450.00,
+                "status": "under_budget",
+                "trend": "stable",
+                "subcategories": {
+                    "electricity": 185.45,
+                    "water": 75.54,
+                    "internet": 89.99,
+                    "phone": 77.00
+                }
+            },
+            "entertainment": {
+                "name": "Entertainment",
+                "amount": 312.99,
+                "percentage": 4.75,
+                "budget": 350.00,
+                "status": "under_budget",
+                "trend": "stable",
+                "subcategories": {
+                    "streaming": 52.97,
+                    "movies": 45.00,
+                    "hobbies": 215.02
+                }
+            },
+            "shopping": {
+                "name": "Shopping",
+                "amount": 642.87,
+                "percentage": 9.76,
+                "budget": 600.00,
+                "status": "over_budget",
+                "trend": "increasing",
+                "subcategories": {
+                    "clothing": 245.67,
+                    "electronics": 297.20,
+                    "household": 100.00
+                }
+            },
+            "health": {
+                "name": "Health & Fitness",
+                "amount": 285.00,
+                "percentage": 4.33,
+                "budget": 300.00,
+                "status": "under_budget",
+                "trend": "stable",
+                "subcategories": {
+                    "gym": 85.00,
+                    "pharmacy": 65.00,
+                    "healthcare": 135.00
+                }
+            },
+            "insurance": {
+                "name": "Insurance",
+                "amount": 445.50,
+                "percentage": 6.77,
+                "budget": 450.00,
+                "status": "under_budget",
+                "trend": "stable",
+                "subcategories": {
+                    "health": 285.00,
+                    "car": 115.50,
+                    "life": 45.00
+                }
+            },
+            "personal": {
+                "name": "Personal Care",
+                "amount": 165.75,
+                "percentage": 2.52,
+                "budget": 200.00,
+                "status": "under_budget",
+                "trend": "stable",
+                "subcategories": {
+                    "grooming": 85.75,
+                    "spa": 80.00
+                }
+            },
+            "education": {
+                "name": "Education",
+                "amount": 659.96,
+                "percentage": 10.02,
+                "budget": 650.00,
+                "status": "over_budget",
+                "trend": "stable",
+                "subcategories": {
+                    "courses": 559.96,
+                    "books": 100.00
+                }
+            }
+        },
+        "trends": {
+            "monthly": [
+                {
+                    "month": "May 2025",
+                    "total": 6745.23
+                },
+                {
+                    "month": "June 2025",
+                    "total": 6892.45
+                },
+                {
+                    "month": "July 2025",
+                    "total": 6654.32
+                },
+                {
+                    "month": "August 2025",
+                    "total": 6789.54
+                },
+                {
+                    "month": "September 2025",
+                    "total": 6825.45
+                },
+                {
+                    "month": "October 2025",
+                    "total": 6584.23
+                }
+            ],
+            "weekly": [
+                {
+                    "week": "Week 1",
+                    "total": 1645.23
+                },
+                {
+                    "week": "Week 2",
+                    "total": 1892.45
+                },
+                {
+                    "week": "Week 3",
+                    "total": 1554.32
+                },
+                {
+                    "week": "Week 4",
+                    "total": 1492.23
+                }
+            ],
+            "daily": [
+                {
+                    "date": "2025-10-22",
+                    "total": 245.67
+                },
+                {
+                    "date": "2025-10-23",
+                    "total": 189.45
+                },
+                {
+                    "date": "2025-10-24",
+                    "total": 567.89
+                },
+                {
+                    "date": "2025-10-25",
+                    "total": 234.56
+                },
+                {
+                    "date": "2025-10-26",
+                    "total": 345.67
+                },
+                {
+                    "date": "2025-10-27",
+                    "total": 456.78
+                },
+                {
+                    "date": "2025-10-28",
+                    "total": 278.90
+                }
+            ]
+        },
+        "insights": [
+            {
+                "type": "alert",
+                "category": "Food & Dining",
+                "message": "Spending in restaurants has increased by 15% this month",
+                "impact": 85.45
+            },
+            {
+                "type": "achievement",
+                "category": "Transportation",
+                "message": "Transportation expenses decreased by 8% from last month",
+                "impact": -41.27
+            },
+            {
+                "type": "tip",
+                "category": "Shopping",
+                "message": "You're $42.87 over your shopping budget this month",
+                "impact": 42.87
+            }
+        ],
+        "budgetProgress": {
+            "totalBudget": 7500.00,
+            "spent": 6584.23,
+            "remaining": 915.77,
+            "percentageUsed": 87.79,
+            "daysRemaining": 3,
+            "projectedOverage": 0,
+            "status": "on_track"
+        }
+    }
+}

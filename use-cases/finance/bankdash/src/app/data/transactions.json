@@ -1,0 +1,178 @@
+{
+    "transactions": [
+        {
+            "id": "txn_001",
+            "date": "2025-10-28",
+            "description": "Whole Foods Market",
+            "category": "Groceries",
+            "type": "debit",
+            "amount": 189.45,
+            "accountId": "acc_001",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/wholefoods.png",
+            "location": "Seattle, WA"
+        },
+        {
+            "id": "txn_002",
+            "date": "2025-10-28",
+            "description": "Netflix Subscription",
+            "category": "Entertainment",
+            "type": "automatic-debit",
+            "amount": 19.99,
+            "accountId": "acc_001",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/netflix.png",
+            "recurring": true
+        },
+        {
+            "id": "txn_003",
+            "date": "2025-10-27",
+            "description": "Salary Deposit - Tech Corp",
+            "category": "Income",
+            "type": "credit",
+            "amount": 5850.00,
+            "accountId": "acc_001",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/techcorp.png",
+            "recurring": true
+        },
+        {
+            "id": "txn_004",
+            "date": "2025-10-27",
+            "description": "Uber Ride",
+            "category": "Transportation",
+            "type": "debit",
+            "amount": 28.50,
+            "accountId": "acc_001",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/uber.png",
+            "location": "Seattle, WA"
+        },
+        {
+            "id": "txn_005",
+            "date": "2025-10-26",
+            "description": "Starbucks Coffee",
+            "category": "Dining",
+            "type": "debit",
+            "amount": 6.75,
+            "accountId": "acc_001",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/starbucks.png",
+            "location": "Seattle, WA"
+        },
+        {
+            "id": "txn_006",
+            "date": "2025-10-26",
+            "description": "Investment Transfer",
+            "category": "Investment",
+            "type": "transfer",
+            "amount": 1000.00,
+            "accountId": "acc_005",
+            "status": "completed",
+            "fromAccount": "acc_001",
+            "toAccount": "acc_005"
+        },
+        {
+            "id": "txn_007",
+            "date": "2025-10-25",
+            "description": "Amazon.com",
+            "category": "Shopping",
+            "type": "debit",
+            "amount": 142.87,
+            "accountId": "acc_002",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/amazon.png",
+            "orderNumber": "112-3456789-012"
+        },
+        {
+            "id": "txn_008",
+            "date": "2025-10-25",
+            "description": "Shell Gas Station",
+            "category": "Auto & Transport",
+            "type": "debit",
+            "amount": 65.23,
+            "accountId": "acc_001",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/shell.png",
+            "location": "Seattle, WA"
+        },
+        {
+            "id": "txn_009",
+            "date": "2025-10-24",
+            "description": "Rent Payment",
+            "category": "Housing",
+            "type": "automatic-debit",
+            "amount": 2200.00,
+            "accountId": "acc_001",
+            "status": "completed",
+            "recurring": true
+        },
+        {
+            "id": "txn_010",
+            "date": "2025-10-24",
+            "description": "Spotify Premium",
+            "category": "Entertainment",
+            "type": "automatic-debit",
+            "amount": 12.99,
+            "accountId": "acc_001",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/spotify.png",
+            "recurring": true
+        },
+        {
+            "id": "txn_011",
+            "date": "2025-10-23",
+            "description": "Credit Card Payment",
+            "category": "Credit Card",
+            "type": "payment",
+            "amount": 1500.00,
+            "accountId": "acc_001",
+            "status": "completed",
+            "toAccount": "card_001"
+        },
+        {
+            "id": "txn_012",
+            "date": "2025-10-23",
+            "description": "Gym Membership",
+            "category": "Health & Fitness",
+            "type": "automatic-debit",
+            "amount": 85.00,
+            "accountId": "acc_001",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/fitness.png",
+            "recurring": true
+        },
+        {
+            "id": "txn_013",
+            "date": "2025-10-22",
+            "description": "Mobile Phone Bill",
+            "category": "Bills & Utilities",
+            "type": "automatic-debit",
+            "amount": 95.00,
+            "accountId": "acc_001",
+            "status": "completed",
+            "merchantLogo": "/assets/merchants/verizon.png",
+            "recurring": true
+        },
+        {
+            "id": "txn_014",
+            "date": "2025-10-22",
+            "description": "Business Revenue",
+            "category": "Income",
+            "type": "credit",
+            "amount": 2450.00,
+            "accountId": "acc_006",
+            "status": "completed"
+        },
+        {
+            "id": "txn_015",
+            "date": "2025-10-21",
+            "description": "Interest Earned",
+            "category": "Interest",
+            "type": "credit",
+            "amount": 12.45,
+            "accountId": "acc_002",
+            "status": "completed"
+        }
+    ]
+}
