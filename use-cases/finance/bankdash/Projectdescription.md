@@ -100,3 +100,8 @@ These patterns maintain design consistency and focus on reducing user error.
 **Next Steps:**
 1.  **Review:** Validate this blueprint with your core development and design teams.
 2.  **Wireframe:** Begin wireframing the "New Transfer Wizard Flow" based on the Wizard Pattern described above.
+
+
+
+
+**the ui implement from** https://www.figma.com/design/izBG53JvFM2mmkvPm6sdku/BankDash---Dashboard-UI-Kit---Admin-Template-Dashboard---Admin-Dashboard--Community-?node-id=0-1&p=f&t=PUoLEBCFK5IRweLx-0
