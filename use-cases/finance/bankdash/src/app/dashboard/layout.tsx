@@ -12,10 +12,12 @@ export default function Layout({
 }>) {
   return (
     <div>
-      <div className="flex">
+      <div>
         <Sidebar />
-        <Topbar />
-        {children}
+        <div className="ms-64">
+          <Topbar />
+          {children}
+        </div>
       </div>
 
       <Footer />
