@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import useIsMobile from "@/app/hooks/useIsMobile";
 import Image from "next/image";
-import { Button } from "../ui/button";
+import { Button } from "../Atoms/button";
 
 function Sidebar() {
   const [open, setOpen] = useState(false);
