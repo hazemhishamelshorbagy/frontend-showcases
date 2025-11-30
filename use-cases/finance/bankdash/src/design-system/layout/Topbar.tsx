@@ -7,6 +7,7 @@ import { useNotifications } from "@/data/useNotifications";
 import AvatarVariant from "../Molecules/AvatarVariant";
 import Link from "next/link";
 import SearchInput from "../Molecules/SearchInput";
+import { useUserProfile } from "@/data/useUserProfile";
 const Topbar = () => {
   const profileMenuItems: UserMenuItem[] = [
     {
@@ -31,11 +32,13 @@ const Topbar = () => {
   const notifications = useNotifications();
   // Use unread alerts for the dropdown
   const alerts = notifications.alerts || [];
-  const avatarPath = "/assets/images/avatars/MaskGroup.svg";
+  const profileInfo = useUserProfile();
+  const avatarInfo = profileInfo.personal || [];
+
   const notificationIcon = "/assets/icons/NotificationBell.svg";
   const settingIcon = "/assets/icons/SettingsIcon.svg";
   return (
-    <div className="sticky top-0 z-10 px-8 shadow-card  w-full   bg-white">
+    <div className="sticky top-0  z-10 px-8 shadow-card  w-full   bg-white">
       <div className="overflow-hidden">
         <div className="h-[90px] max-h-[90px] size flex items-center lg:justify-between justify-end">
           <Text as="h1" className="text-gradient">
@@ -58,12 +61,14 @@ const Topbar = () => {
               notificationToolTip="Mark All As Read"
             />
             <UserProfileMenu
-              avatartImageURL={avatarPath}
+              avatartImageURL={avatarInfo.profileImage}
               avatarSizeClass={12}
-              imageFallback="JD"
-              avatarName="Julia Avtar"
+              imageFallback={
+                avatarInfo.firstName.charAt(0) + avatarInfo.lastName.charAt(0)
+              }
+              avatarName={avatarInfo.firstName + " " + avatarInfo.lastName}
               menuItems={profileMenuItems}
-              avatarJob={"Admin"}
+              avatarJob={avatarInfo.occupation}
               status="online"
             />
           </div>

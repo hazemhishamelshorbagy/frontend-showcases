@@ -25,7 +25,7 @@ const SearchInput = ({
 
   return (
     <>
-      <InputGroup className=" max-w-[255px] border-0 focus:ring-0  bg-greylight rounded-3xl shadow-card">
+      <InputGroup className=" max-w-[255px] border-0 focus:ring-0  bg-grey-light rounded-3xl shadow-card">
         <InputGroupInput
           ref={inputRef}
           placeholder={placeholder}
@@ -38,7 +38,7 @@ const SearchInput = ({
         </InputGroupAddon>
       </InputGroup>
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="bg-greylight">
+        <DialogContent className="bg-grey-light">
           {modalContent || (
             <div className="p-4">
               <DialogTitle className="mb-4 text-lg font-semibold">

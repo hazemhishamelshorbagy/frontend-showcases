@@ -6,16 +6,14 @@ export function PriorityPill({
   priority?: "high" | "medium" | "low";
 }) {
   const map = {
-    high: "bg-destructive/90",
-    medium: "bg-accent/90",
-    low: "bg-muted/80",
+    high: "bg-raw-red",
+    medium: "bg-raw-dark-blue",
+    low: "bg-raw-muted-blue",
   } as const;
   return (
     <span
-      className={`py-1 px-3 text-white rounded-full font-medium ${map[priority]}`}
+      className={`size-2 text-white rounded-full font-medium ${map[priority]}`}
       aria-hidden
-    >
-      {priority}
-    </span>
+    />
   );
 }

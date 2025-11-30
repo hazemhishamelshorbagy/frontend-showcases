@@ -57,7 +57,7 @@ const UserProfileMenu = ({
               <Text as="h6" className="text-secondary text-sm  font-bold">
                 {avatarName}
               </Text>
-              <Text as="body-small" className="text-muted-foreground text-xs">
+              <Text as="body-small" className="text-raw-muted-blue text-xs">
                 {avatarJob}
               </Text>
             </div>
@@ -71,13 +71,16 @@ const UserProfileMenu = ({
         {/* Mapping over the 'dropdownitems' array */}
         {menuItems.map((item) => (
           <DropdownMenuItem
-            className="p-3 hover:bg-blue-100 focus:bg-blue-100 hover:text-primary transition-all"
+            className="p-3  focus:bg-blue-100 hover:text-raw-dark-blue transition-all"
             key={item.id}
             asChild
           >
             <div className="flex gap-1 items-center">
               {item.icon}
-              <Link className="text-body-lg text-background " href={item.href}>
+              <Link
+                className="text-body-lg text-raw-dark-blue "
+                href={item.href}
+              >
                 {item.label}
               </Link>
             </div>

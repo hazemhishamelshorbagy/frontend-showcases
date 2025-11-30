@@ -1,4 +1,6 @@
 import { Topbar, Footer, Sidebar } from "@/design-system/layout";
+import SidebarMenu from "@/design-system/layout/Sidebar";
+import { SidebarProvider } from "@/design-system/Molecules/sidebar/sidebar";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "dashboard",
@@ -12,14 +14,15 @@ export default function Layout({
 }>) {
   return (
     <div>
-      <div>
-        <Sidebar />
-        <div className="lg:ms-64 ms-0">
-          <Topbar />
-          <div className="px-8">{children}</div>
-        </div>
+      <div className="lg:ms-64 ms-0">
+        {" "}
+        <Topbar />
+        <div className="px-8 py-8">{children}</div>
       </div>
 
+      <SidebarProvider>
+        <SidebarMenu />
+      </SidebarProvider>
       <Footer />
     </div>
   );

@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@custom-variant dark (&:is(.dark *));
+
 /* --------------------------------------------------- */
 /* --- 1. CORE PALETTE & LIGHT MODE SEMANTIC MAPPING --- */
 /* --------------------------------------------------- */
@@ -19,6 +21,7 @@
   --color-border-default: oklch(30% 0.05 265);
   --color-darkblue-gradiant: linear-gradient(to right, #123288, #295EEC);
   --color-grey-light: oklch(97.4% 0.005 270);
+
   /* 1.2. Semantic Mapping (Light Mode Defaults) */
   --background: var(--color-dark-blue);
   /* Used for body background */
@@ -85,7 +88,6 @@
   --shadow-soft: 4px 4px 18px -2px rgba(231, 228, 232, 0.8);
 }
 
-
 /* ------------------------------- */
 /* --- 2. DARK MODE OVERRIDES --- */
 /* ------------------------------- */
@@ -114,16 +116,23 @@
 
   --input: var(--muted);
   /* Use the new dark muted color */
+  --sidebar: hsl(240 5.9% 10%);
+  --sidebar-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-primary: hsl(224.3 76.3% 48%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(240 3.7% 15.9%);
+  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-border: hsl(240 3.7% 15.9%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
-
 
 /* ---------------------------------------------------- */
 /* --- 3. THEME TOKEN MAPPING (For UI Frameworks) --- */
 /* ---------------------------------------------------- */
 @theme inline {
+  /* --- Semantic Colors (Existing Mapping) --- */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-greylight: var(--color-grey-light);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
@@ -141,20 +150,38 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+
+  /* --- Raw Palette Colors (NEW MAPPING) --- */
+  --color-raw-warm-orange: var(--color-warm-orange);
+  --color-raw-dark-blue: var(--color-dark-blue);
+  --color-raw-vibrant-blue: var(--color-vibrant-blue);
+  --color-raw-pink: var(--color-pink);
+  --color-raw-muted-blue: var(--color-muted-blue);
+  --color-raw-red: var(--color-red);
+  --color-raw-light-text: var(--color-light-text);
+  --color-raw-main-text: var(--color-main-text);
+  --color-raw-muted-bg: var(--color-muted-bg);
+  --color-raw-border-default: var(--color-border-default);
+
+  /* --- Utility Colors (Existing Mapping) --- */
+  --color-darkblue-gradiant: var(--color-darkblue-gradiant);
+  --color-grey-light: var(--color-grey-light);
+  /* Kept original name for this one */
+
+  /* --- Chart Colors (Existing Mapping) --- */
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --color-darkblue-gradiant: var(--color-darkblue-gradiant);
 
-  /* Utilities */
+  /* --- Utilities --- */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  /* Sidebar */
+  /* --- Sidebar (Existing Mapping) --- */
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -166,14 +193,11 @@
   --shadow-card: var(--shadow-soft);
 }
 
-
-/* --- 3. BASE LAYER --- */
+/* --- 4. BASE LAYER --- */
 @layer base {
   * {
     @apply transition-colors duration-300 ease-in-out;
   }
-
-
 
   /* * >>> ADD THESE STYLES TO MAKE YOUR H1-H6 VARIABLES WORK <<<
    */
@@ -207,8 +231,6 @@
     @apply font-normal;
   }
 
-
-
   /* Optional: Apply body size variables */
   .text-body-lg {
     font-size: var(--text-body-lg);
@@ -228,5 +250,13 @@
     -webkit-text-fill-color: transparent;
   }
 
+}
 
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

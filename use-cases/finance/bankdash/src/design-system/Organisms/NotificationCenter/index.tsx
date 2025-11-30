@@ -51,8 +51,11 @@ const NotificationCenter = ({
               {notificationLabel}
             </Text>
             <div className="notification-count flex gap-3">
-              <Badge className="bg-primary flex px-1 gap-2 text-white items-center">
-                <Text as="span" className="">
+              <Badge
+                variant={"outline"}
+                className="bg-raw-warm-orange flex px-3 gap-2 font-light text-white py-0.5 border-0 items-center rounded-3xl"
+              >
+                <Text as="span" className=" text-white">
                   {notificationCountItem}
                 </Text>
                 New
