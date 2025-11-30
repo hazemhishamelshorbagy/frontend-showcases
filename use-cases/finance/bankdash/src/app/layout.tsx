@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./styles/globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "@/styles/globals.css";
+import { interLocal } from "./font";
+import { TooltipProvider } from "@/design-system/Atoms/Tooltip";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100`}
+        className={`${interLocal.className} ${interLocal.variable}antialiased bg-gray-100 overflow-hidden mr-0`}
       >
-        {children}
+        <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
   );

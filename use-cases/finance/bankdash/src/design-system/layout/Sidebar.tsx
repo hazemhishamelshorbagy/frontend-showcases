@@ -1,11 +1,13 @@
 "use client";
 
-import { BurgerMenu, Logo } from "@/app/assets/assets";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import useIsMobile from "@/app/hooks/useIsMobile";
+
 import Image from "next/image";
-import { Button } from "../Atoms/button";
+import useIsMobile from "@/hooks/useIsMobile";
+import BurgerMenu from "public/assets/icons/BurgerMenu.svg";
+import Logo from "public/assets/icons/Logo.svg";
+import { Button } from "../Atoms/Button";
 
 function Sidebar() {
   const [open, setOpen] = useState(false);
@@ -51,16 +53,20 @@ function Sidebar() {
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-full w-64 z-50 bg-white border-r border-[#E6EFF5] transform transition-transform duration-300 min-h-screen ease-in-out
+        className={`fixed top-0 left-0 shadow-card h-full w-64 z-50 bg-white border-r border-[#E6EFF5] transform transition-transform duration-300 min-h-screen ease-in-out
           ${
             open ? "translate-x-0" : "-translate-x-full"
           } md:translate-x-0  md:block`}
         role="navigation"
         aria-hidden={!open && isMobile}
       >
-        <div className="h-16 flex items-center justify-between px-4">
-          <Link href="/" onClick={() => setOpen(false)}>
-            <Image src={Logo} alt="logo" width={140} height={48} />
+        <div className="h-[90px] max-h-[90px] flex items-center justify-center ">
+          <Link
+            href="/dashboard"
+            className="w-auto h-auto"
+            onClick={() => setOpen(false)}
+          >
+            <Image src={Logo} alt="logo" width={183} height={36} />
           </Link>
 
           {/* close button on mobile inside sidebar */}

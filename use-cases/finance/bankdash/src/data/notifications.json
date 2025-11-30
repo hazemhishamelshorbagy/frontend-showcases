@@ -11,7 +11,7 @@
                 "message": "A transaction of $1,458.92 was made at Amazon.com",
                 "timestamp": "2025-10-28T14:30:00Z",
                 "accountId": "acc_001",
-                "status": "unread",
+                "status": "read",
                 "action": "review",
                 "actionUrl": "/dashboard/transactions"
             },
@@ -36,7 +36,7 @@
                 "message": "Credit card payment of $1,500.00 is due in 3 days",
                 "timestamp": "2025-10-28T12:00:00Z",
                 "accountId": "card_001",
-                "status": "unread",
+                "status": "read",
                 "action": "pay_now",
                 "actionUrl": "/dashboard/bills"
             },
@@ -111,7 +111,7 @@
                 "title": "Password Expiring Soon",
                 "message": "Your password will expire in 7 days. Please update it.",
                 "timestamp": "2025-10-27T16:00:00Z",
-                "status": "read",
+                "status": "unread",
                 "action": "change_password",
                 "actionUrl": "/dashboard/security/password"
             },
