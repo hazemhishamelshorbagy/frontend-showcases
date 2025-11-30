@@ -16,7 +16,7 @@ export default function Layout({
         <Sidebar />
         <div className="lg:ms-64 ms-0">
           <Topbar />
-          {children}
+          <div className="px-8">{children}</div>
         </div>
       </div>
 
