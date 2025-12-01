@@ -1,0 +1,47 @@
+[
+    {
+        "label": "Dashboard",
+        "icon": "dashboard",
+        "href": "/dashboard"
+    },
+    {
+        "label": "Transactions",
+        "icon": "transactions",
+        "href": "/dashboard/transactions"
+    },
+    {
+        "label": "Accounts",
+        "icon": "accounts",
+        "href": "/dashboard/accounts"
+    },
+    {
+        "label": "Investments",
+        "icon": "investments",
+        "href": "/dashboard/investments"
+    },
+    {
+        "label": "Credit Cards",
+        "icon": "credit-cards",
+        "href": "/dashboard/credit-cards"
+    },
+    {
+        "label": "Loans",
+        "icon": "loans",
+        "href": "/dashboard/loans"
+    },
+    {
+        "label": "Services",
+        "icon": "services",
+        "href": "/dashboard/services"
+    },
+    {
+        "label": "My Privileges",
+        "icon": "privileges",
+        "href": "/dashboard/privileges"
+    },
+    {
+        "label": "Setting",
+        "icon": "settings",
+        "href": "/dashboard/settings"
+    }
+]

@@ -58,7 +58,7 @@ const Topbar = () => {
               notificationCountItem={notifications.unreadCount}
               notificationLabel="Notifications"
               notificationitems={alerts}
-              notificationToolTip="Mark All As Read"
+              notificationToolTip="Change Notification Settings"
             />
             <UserProfileMenu
               avatartImageURL={avatarInfo.profileImage}

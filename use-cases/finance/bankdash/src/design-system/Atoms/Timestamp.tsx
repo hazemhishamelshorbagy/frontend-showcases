@@ -4,7 +4,7 @@ export function Timestamp({
   iso,
   className = "",
 }: {
-  iso: string;
+  iso?: string;
   className?: string;
 }) {
   const label = (() => {

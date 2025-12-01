@@ -11,7 +11,7 @@
                 "message": "A transaction of $1,458.92 was made at Amazon.com",
                 "timestamp": "2025-10-28T14:30:00Z",
                 "accountId": "acc_001",
-                "status": "read",
+                "status": "unread",
                 "action": "review",
                 "actionUrl": "/dashboard/transactions"
             },

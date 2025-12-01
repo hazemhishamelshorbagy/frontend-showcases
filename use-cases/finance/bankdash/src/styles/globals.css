@@ -21,7 +21,8 @@
   --color-border-default: oklch(30% 0.05 265);
   --color-darkblue-gradiant: linear-gradient(to right, #123288, #295EEC);
   --color-grey-light: oklch(97.4% 0.005 270);
-
+  --color-green-light: oklch(75% 0.1 140);
+  --color-green-dark: oklch(45% 0.15 140);
   /* 1.2. Semantic Mapping (Light Mode Defaults) */
   --background: var(--color-dark-blue);
   /* Used for body background */
@@ -150,6 +151,8 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-success: var(--color-green-light);
+  --color-success-foreground: var(--color-green-dark);
 
   /* --- Raw Palette Colors (NEW MAPPING) --- */
   --color-raw-warm-orange: var(--color-warm-orange);
@@ -250,12 +253,15 @@
     -webkit-text-fill-color: transparent;
   }
 
+
+
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

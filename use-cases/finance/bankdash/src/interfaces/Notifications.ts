@@ -1,13 +1,13 @@
 export interface NotificationSingleItem {
-    id: string;
+    id?: string;
     type: string;
     category?: string;
     priority?: "high" | "medium" | "low";
-    title: string;
-    message: string;
-    timestamp: string; // ISO string from JSON
+    title?: string;
+    message?: string;
+    timestamp?: string; // ISO string from JSON
     accountId?: string;
-    status: "unread" | "read";
+    status?: "unread" | "read";
     action?: string;
     actionUrl?: string;
 }

@@ -6,6 +6,7 @@ import { Dialog, DialogContent } from "./Dialog";
 import { SearchInputProps } from "@/interfaces/SearchInput";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { Text } from "../Atoms/Text";
+import { Button } from "../Atoms/Button";
 
 const SearchInput = ({
   placeholder = "Search...",
@@ -25,7 +26,7 @@ const SearchInput = ({
 
   return (
     <>
-      <InputGroup className=" max-w-[255px] border-0 focus:ring-0  bg-grey-light rounded-3xl shadow-card">
+      <InputGroup className="hidden lg:flex max-w-[255px] border-0 focus:ring-0  bg-grey-light rounded-3xl shadow-card">
         <InputGroupInput
           ref={inputRef}
           placeholder={placeholder}
@@ -37,6 +38,13 @@ const SearchInput = ({
           <SearchIcon />
         </InputGroupAddon>
       </InputGroup>
+      <Button
+        variant={"ghost"}
+        className="lg:hidden w-8 h-8"
+        onClick={handleFocus}
+      >
+        <SearchIcon />
+      </Button>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="bg-grey-light">
           {modalContent || (

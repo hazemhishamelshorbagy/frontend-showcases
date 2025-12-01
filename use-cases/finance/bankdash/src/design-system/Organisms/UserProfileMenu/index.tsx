@@ -54,7 +54,10 @@ const UserProfileMenu = ({
               <AvatarFallback>{imageFallback}</AvatarFallback>
             </Avatar>
             <div className="flex flex-col ">
-              <Text as="h6" className="text-secondary text-sm  font-bold">
+              <Text
+                as="h6"
+                className="text-raw-vibrant-blue text-sm  font-bold"
+              >
                 {avatarName}
               </Text>
               <Text as="body-small" className="text-raw-muted-blue text-xs">
@@ -71,7 +74,7 @@ const UserProfileMenu = ({
         {/* Mapping over the 'dropdownitems' array */}
         {menuItems.map((item) => (
           <DropdownMenuItem
-            className="p-3  focus:bg-blue-100 hover:text-raw-dark-blue transition-all"
+            className="p-3  focus:bg-blue-100 hover:text-raw-vibrant-blue transition-all"
             key={item.id}
             asChild
           >
@@ -90,11 +93,11 @@ const UserProfileMenu = ({
           className="bg-neutral-200
         "
         />
-        <DropdownMenuItem className="p-3 hover:bg-blue-100 focus:bg-blue-100 hover:text-primary transition-all">
+        <DropdownMenuItem className="p-3 hover:bg-blue-100 focus:bg-blue-100 hover:text-raw-vibrant-blue transition-all">
           <LogOut className="size-5" />
           {/* <LogOut className="mr-2 h-4 w-4" /> */}
           <Text as="h6" className="text-body-lg text-secondary-foreground">
-            Log Out
+            Logout
           </Text>
         </DropdownMenuItem>
       </DropdownMenuContent>
