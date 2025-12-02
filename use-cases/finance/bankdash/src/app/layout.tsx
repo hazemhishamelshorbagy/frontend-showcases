@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
-import { interLocal } from "./font";
+import { interLocal } from "../lib/font";
 import { TooltipProvider } from "@/design-system/Atoms/Tooltip";
-import {
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/design-system/Molecules/sidebar/sidebar";
 
 export const metadata: Metadata = {
   title: "Create Next App",

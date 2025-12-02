@@ -50,6 +50,7 @@ export function Icon({
       return <Lightbulb className={`${size} ${className}`} />;
     case "settings":
       return <Settings className={`${size} ${className}`} />;
+
     default:
       return <Bell className={`${size} ${className}`} />;
   }
