@@ -23,7 +23,7 @@ export function CreditCardSingle({
     <Card
       // Apply the container class dynamically (e.g., 'bg-blue-600 text-white')
       className={cn(
-        "w-full max-w-[400px] rounded-[25px] border-none shadow-none",
+        "w-full min-w-[400px] rounded-[25px] border-none shadow-none",
         classes.container
       )}
     >

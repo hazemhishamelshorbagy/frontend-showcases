@@ -13,6 +13,15 @@ import {
   Wrench,
   Lightbulb,
   Settings,
+  Car,
+  Coffee,
+  DollarSign,
+  HeartPulse,
+  Receipt,
+  ShoppingBag,
+  TrendingUp,
+  Tv,
+  Wallet,
 } from "lucide-react";
 
 export function Icon({
@@ -50,6 +59,34 @@ export function Icon({
       return <Lightbulb className={`${size} ${className}`} />;
     case "settings":
       return <Settings className={`${size} ${className}`} />;
+    // transactions categorized icons
+    case "Groceries":
+      return <ShoppingBag className={`${size} ${className}`} />;
+    case "Entertainment":
+      return <Tv className={`${size} ${className}`} />;
+    case "Income":
+      return <DollarSign className={`${size} ${className}`} />;
+    case "Transportation":
+    case "Auto & Transport":
+      return <Car className={`${size} ${className}`} />;
+    case "Dining":
+      return <Coffee className={`${size} ${className}`} />;
+    case "Investment":
+      return <TrendingUp className={`${size} ${className}`} />;
+    case "Shopping":
+      return <CreditCard className={`${size} ${className}`} />;
+    case "Housing":
+      return <House className={`${size} ${className}`} />;
+    case "Health & Fitness":
+      return <HeartPulse className={`${size} ${className}`} />;
+    case "Bills & Utilities":
+      return <Receipt className={`${size} ${className}`} />;
+    case "Credit Card":
+      return <Wallet className={`${size} ${className}`} />;
+    case "Interest":
+      return <Star className={`${size} ${className}`} />; // Added Interest
+    case "transfer":
+      return <ArrowLeftRight className={`${size} ${className}`} />; // Added transfer type
 
     default:
       return <Bell className={`${size} ${className}`} />;
