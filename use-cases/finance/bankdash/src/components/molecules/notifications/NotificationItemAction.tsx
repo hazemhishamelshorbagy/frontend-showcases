@@ -3,7 +3,7 @@
 import React from "react";
 import { NotificationSingleItem } from "@/interfaces/Notifications";
 import { getActionUrl } from "@/utils/getActionUrl";
-import { Button } from "@/design-system/Atoms/Button";
+import { Button } from "@/components/atoms/Button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 const NotificationItemAction = ({

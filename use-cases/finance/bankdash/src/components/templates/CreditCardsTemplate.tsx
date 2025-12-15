@@ -1,10 +1,12 @@
 "use client";
-import { SkeletonCard } from "@/design-system/Molecules/skeletons/SkeletonCard";
-import { CreditCardSingle } from "@/design-system/Organisms/Cards/CreditCardSingle";
+import { SkeletonCard } from "@/components/molecules/skeletons/SkeletonCard";
+import { CreditCardSingle } from "@/components/organisms/cards/CreditCardSingle";
+import { useCardList } from "@/data/useCardList";
+
 import { CreditCardsFeatureProps } from "@/interfaces/CreditCardField";
 import { useState } from "react";
 
-const CreditCards = ({ cards, noOfCard }: CreditCardsFeatureProps) => {
+const CreditCardsTemplate = ({ cards, noOfCard }: CreditCardsFeatureProps) => {
   const [isLoading, setIsLoading] = useState(false);
   if (!cards || cards.length === 0) {
     return <div>No cards available.</div>;
@@ -32,4 +34,4 @@ const CreditCards = ({ cards, noOfCard }: CreditCardsFeatureProps) => {
   );
 };
 
-export default CreditCards;
+export default CreditCardsTemplate;

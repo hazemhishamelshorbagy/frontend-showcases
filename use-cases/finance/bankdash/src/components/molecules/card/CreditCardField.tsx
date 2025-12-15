@@ -1,5 +1,5 @@
-import { Label } from "@/design-system/Atoms/Label";
-import { Text } from "@/design-system/Atoms/Text";
+import { Label } from "@/components/atoms/Label";
+import { Text } from "@/components/atoms/Text";
 import { cn } from "@/lib/utils"; // standard shadcn utility for class names
 
 interface CreditCardFieldProps {

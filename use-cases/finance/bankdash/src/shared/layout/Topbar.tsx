@@ -2,14 +2,14 @@ import { UserMenuItem } from "@/interfaces/User";
 
 import { Receipt, Settings, User } from "lucide-react";
 import { useNotifications } from "@/data/useNotifications";
-import { Text } from "@/design-system/Atoms/Text";
+import { Text } from "@/components/atoms/Text";
 import Link from "next/link";
 
 import { useUserProfile } from "@/data/useUserProfile";
-import AvatarVariant from "@/design-system/Molecules/AvatarVariant";
-import SearchInput from "@/design-system/Molecules/SearchInput";
-import NotificationCenter from "@/design-system/Organisms/NotificationCenter";
-import UserProfileMenu from "@/design-system/Organisms/UserProfileMenu";
+import AvatarVariant from "@/components/molecules/AvatarVariant";
+import SearchInput from "@/components/molecules/SearchInput";
+import NotificationCenter from "@/components/organisms/NotificationCenter";
+import UserProfileMenu from "@/components/organisms/UserProfileMenu";
 const Topbar = () => {
   const profileMenuItems: UserMenuItem[] = [
     {

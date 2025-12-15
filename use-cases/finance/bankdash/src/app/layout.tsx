@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { interLocal } from "../lib/font";
-import { TooltipProvider } from "@/design-system/Atoms/Tooltip";
+import { TooltipProvider } from "@/components/atoms/Tooltip";
 
 export const metadata: Metadata = {
   title: "Create Next App",

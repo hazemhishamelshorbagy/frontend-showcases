@@ -3,7 +3,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/design-system/Atoms/AvatarImage"; // Adjust path if necessary
+} from "@/components/atoms/AvatarImage"; // Adjust path if necessary
 import { cn } from "@/lib/utils";
 import { Clock } from "lucide-react"; // For the 'withTimeAndState' variant
 

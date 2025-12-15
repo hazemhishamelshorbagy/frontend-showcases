@@ -1,4 +1,4 @@
-import { SidebarProvider } from "@/design-system/Molecules/sidebar/sidebar";
+import { SidebarProvider } from "@/components/molecules/sidebar/sidebar";
 import { Footer, Topbar } from "@/shared/layout";
 import SidebarMenu from "@/shared/layout/Sidebar";
 import sidebarGroups from "@/shared/layout/sidebarGroups";

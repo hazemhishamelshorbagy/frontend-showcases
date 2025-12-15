@@ -1,6 +1,6 @@
 "use client";
-import { Card } from "@/design-system/Atoms/Card";
-import ChartType from "@/design-system/Molecules/Chart";
+import { Card } from "@/components/atoms/Card";
+import ChartType from "@/components/molecules/Chart";
 import prepareChartDataExpenses from "@/utils/prepareChartDataExpenses";
 import { FC } from "react";
 

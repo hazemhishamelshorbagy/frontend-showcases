@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "@/design-system/Atoms/Text";
+import { Text } from "@/components/atoms/Text";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,13 +7,13 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/design-system/Molecules/DropdownMenu";
+} from "@/components/molecules/DropdownMenu";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/design-system/Atoms/AvatarImage";
-import AvatarVariant from "@/design-system/Molecules/AvatarVariant";
+} from "@/components/atoms/AvatarImage";
+import AvatarVariant from "@/components/molecules/AvatarVariant";
 import Link from "next/link";
 import { UserProfileMenuProps } from "@/interfaces/User";
 import { LogOut } from "lucide-react";

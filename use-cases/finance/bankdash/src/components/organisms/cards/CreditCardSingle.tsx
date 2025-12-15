@@ -3,8 +3,8 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from "@/design-system/Atoms/Card";
-import { CreditCardField } from "@/design-system/Molecules/card/CreditCardField";
+} from "@/components/atoms/Card";
+import { CreditCardField } from "@/components/molecules/card/CreditCardField";
 import { CreditCardProps } from "@/interfaces/CreditCardField";
 import { cn } from "@/lib/utils";
 import { getCardDesignClasses } from "@/utils/card-design-map";

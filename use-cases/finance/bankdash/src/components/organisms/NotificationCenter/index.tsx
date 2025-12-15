@@ -6,20 +6,20 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/design-system/Molecules/DropdownMenu";
-import { Text } from "@/design-system/Atoms/Text";
+} from "@/components/molecules/DropdownMenu";
+import { Text } from "@/components/atoms/Text";
 
-import AvatarVariant from "@/design-system/Molecules/AvatarVariant";
-import { Badge } from "@/design-system/Atoms/Badge";
+import AvatarVariant from "@/components/molecules/AvatarVariant";
+import { Badge } from "@/components/atoms/Badge";
 import { Eye, Settings } from "lucide-react";
-import { Button } from "@/design-system/Atoms/Button";
+import { Button } from "@/components/atoms/Button";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/design-system/Atoms/Tooltip";
+} from "@/components/atoms/Tooltip";
 import { NotificationProps } from "@/interfaces/Notifications";
-import NotificationItem from "@/design-system/Molecules/notifications/NotificationItem";
+import NotificationItem from "@/components/molecules/notifications/NotificationItem";
 
 const NotificationCenter = ({
   notificationIcon,

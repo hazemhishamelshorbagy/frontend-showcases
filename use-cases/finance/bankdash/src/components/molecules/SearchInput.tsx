@@ -5,8 +5,8 @@ import { InputGroup, InputGroupInput, InputGroupAddon } from "./Input-group";
 import { Dialog, DialogContent } from "./Dialog";
 import { SearchInputProps } from "@/interfaces/SearchInput";
 import { DialogTitle } from "@radix-ui/react-dialog";
-import { Text } from "../Atoms/Text";
-import { Button } from "../Atoms/Button";
+import { Text } from "../atoms/Text";
+import { Button } from "../atoms/Button";
 
 const SearchInput = ({
   placeholder = "Search...",

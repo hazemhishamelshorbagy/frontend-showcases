@@ -1,4 +1,4 @@
-import { Skeleton } from "@/design-system/Atoms/Skeleton";
+import { Skeleton } from "@/components/atoms/Skeleton";
 import { SkeletonCardProps } from "@/interfaces/SkeletonCard";
 import { cn } from "@/lib/utils";
 

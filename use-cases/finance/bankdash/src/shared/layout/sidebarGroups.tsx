@@ -1,8 +1,8 @@
 "use client";
 import sidebarMenu from "@/data/sidebar-menu.json";
 import Link from "next/link";
-import { Icon } from "@/design-system/Atoms/Icons";
-import { Text } from "@/design-system/Atoms/Text";
+import { Icon } from "@/components/atoms/Icons";
+import { Text } from "@/components/atoms/Text";
 import { usePathname } from "next/navigation";
 
 export const sidebarGroups = () => {

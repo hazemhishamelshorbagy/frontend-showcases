@@ -10,8 +10,8 @@ import {
   Sidebar,
   SidebarContent,
   SidebarHeader,
-} from "@/design-system/Molecules/sidebar/sidebar";
-import { Button } from "@/design-system/Atoms/Button";
+} from "@/components/molecules/sidebar/sidebar";
+import { Button } from "@/components/atoms/Button";
 import { SidebarMenuProps } from "@/interfaces/SideBar";
 import SidebarGroups from "./sidebarGroups";
 

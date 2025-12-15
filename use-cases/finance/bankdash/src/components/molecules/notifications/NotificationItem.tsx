@@ -1,9 +1,9 @@
 import React from "react";
 import { DropdownMenuItem } from "../DropdownMenu";
-import { Text } from "@/design-system/Atoms/Text";
+import { Text } from "@/components/atoms/Text";
 import { NotificationSingleItem } from "@/interfaces/Notifications";
-import { Icon } from "@/design-system/Atoms/Icons";
-import { Timestamp } from "@/design-system/Atoms/Timestamp";
+import { Icon } from "@/components/atoms/Icons";
+import { Timestamp } from "@/components/atoms/Timestamp";
 import { PriorityPill } from "./PriorityPill";
 import clsx from "clsx";
 import { getActionUrl } from "@/utils/getActionUrl";
