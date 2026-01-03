@@ -10,6 +10,7 @@ import AvatarVariant from "@/components/molecules/AvatarVariant";
 import SearchInput from "@/components/molecules/SearchInput";
 import NotificationCenter from "@/components/organisms/NotificationCenter";
 import UserProfileMenu from "@/components/organisms/UserProfileMenu";
+import { notificationIcon, settingIcon } from "public/assets/icons/icons";
 const Topbar = () => {
   const profileMenuItems: UserMenuItem[] = [
     {
@@ -32,13 +33,10 @@ const Topbar = () => {
     },
   ];
   const notifications = useNotifications();
-  // Use unread alerts for the dropdown
   const alerts = notifications.alerts || [];
   const profileInfo = useUserProfile();
   const avatarInfo = profileInfo.personal || [];
 
-  const notificationIcon = "/assets/icons/NotificationBell.svg";
-  const settingIcon = "/assets/icons/SettingsIcon.svg";
   return (
     <div className="sticky top-0  z-10 px-8 shadow-card  w-full   bg-white">
       <div className="overflow-hidden">

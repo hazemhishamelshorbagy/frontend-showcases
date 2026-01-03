@@ -16,7 +16,7 @@ export default function Layout({
 }>) {
   return (
     <div>
-      <div className="lg:ms-64 ms-0">
+      <div className="lg:ms-64 ms-0  min-h-screen flex flex-col">
         {" "}
         <Topbar />
         <div className="px-8 py-8">{children}</div>
