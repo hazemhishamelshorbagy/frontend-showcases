@@ -11,6 +11,7 @@ import {
 } from "../organisms/tables/Table";
 import { checkTransactionState } from "@/utils/checkTransactionState.map";
 import { Badge } from "../atoms/Badge";
+import { checkTransactionTypeSign } from "@/utils/checkTransactionTypeSign";
 
 type TransactionsTableProps = {
   data: Transaction[] | any[];
@@ -45,7 +46,17 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({ data }) => {
             <TableCell>{txn.category}</TableCell>
             <TableCell>{txn.type}</TableCell>
             <TableCell>{txn.date}</TableCell>
-            <TableCell>{txn.amount}</TableCell>
+            <TableCell>
+              {" "}
+              <Text
+                as="span"
+                className={`font-light text-${
+                  checkTransactionTypeSign(txn.type).textColor
+                }`}
+              >
+                {checkTransactionTypeSign(txn.type).sign} ${txn.amount}
+              </Text>
+            </TableCell>
             <TableCell>
               <Badge
                 variant={"outline"}

@@ -7,7 +7,10 @@
 /* --- 1. CORE PALETTE & LIGHT MODE SEMANTIC MAPPING --- */
 /* --------------------------------------------------- */
 :root {
-
+  --color-yellow: oklch(95% 0.12 100);
+  /* light yellow */
+  --color-yellow-dark: oklch(45% 0.15 100);
+  /* darker yellow for dark mode or text */
   /* 1.1. Base Palette (Raw Colors - Use OKLCH) */
   --color-warm-orange: oklch(76.5% 0.12 85);
   --color-dark-blue: oklch(24.3% 0.09 265);
@@ -134,7 +137,9 @@
   /* --- Semantic Colors (Existing Mapping) --- */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-green-dark: var(--color-green-dark);
   --color-card: var(--card);
+  --bg-orange: var(--color-warm-orange);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);

@@ -48,4 +48,13 @@ export interface TransactionState {
 
 }
 
+
+
 export type validStatuses = "pending" | "completed" | "failed";
+
+export interface Transactionsign {
+    textColor: string;
+    sign: string;
+}
+
+export type validTransactionTypes = 'debit' | 'credit' | 'automatic-debit' | 'transfer' | 'payment';
