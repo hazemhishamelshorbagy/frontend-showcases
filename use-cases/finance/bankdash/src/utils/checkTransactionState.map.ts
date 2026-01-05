@@ -5,7 +5,7 @@ export function checkTransactionState(status: validStatuses): TransactionState {
     switch (status.toLowerCase()) {
         case "pending":
             return {
-                stateColor: "[#F59E0B]",
+                stateColor: "warning",
                 text: "Pending",
             }
         case "completed":

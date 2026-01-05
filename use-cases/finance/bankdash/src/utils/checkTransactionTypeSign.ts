@@ -4,7 +4,7 @@ export function checkTransactionTypeSign(type: validTransactionTypes): Transacti
     switch (type) {
         case 'credit':
             return {
-                textColor: 'green-500',
+                textColor: 'success',
                 sign: '+'
             };
 

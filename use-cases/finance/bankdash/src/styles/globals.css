@@ -1,12 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
 
 /* --------------------------------------------------- */
 /* --- 1. CORE PALETTE & LIGHT MODE SEMANTIC MAPPING --- */
 /* --------------------------------------------------- */
-:root {
+:root, :host {
   --color-yellow: oklch(95% 0.12 100);
   /* light yellow */
   --color-yellow-dark: oklch(45% 0.15 100);
@@ -39,7 +38,7 @@
 
   --primary: var(--color-vibrant-blue);
   --primary-foreground: var(--color-light-text);
-
+  --warning: var(--color-yellow);
   --secondary: var(--color-warm-orange);
   --secondary-foreground: var(--color-dark-blue);
 
@@ -139,7 +138,7 @@
   --color-foreground: var(--foreground);
   --color-green-dark: var(--color-green-dark);
   --color-card: var(--card);
-  --bg-orange: var(--color-warm-orange);
+  --bg-warning: var(--color-warm-orange);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
@@ -250,6 +249,14 @@
 
   .text-body-sm {
     font-size: var(--text-body-sm);
+  }
+
+  .bg-warning {
+    background-color: var(--bg-warning);
+  }
+
+  .text-success {
+    color: var(--color-green-dark);
   }
 
   .text-gradient {

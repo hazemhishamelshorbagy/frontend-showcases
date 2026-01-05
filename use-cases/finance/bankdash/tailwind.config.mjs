@@ -13,6 +13,12 @@ export default {
             colors: {
                 background: "var(--background)",
                 foreground: "var(--foreground)",
+                warning: "var(--warning)",
+                card: "var(--card)",
+                "card-foreground": "var(--card-foreground)",
+                popover: "var(--popover)",
+                "popover-foreground": "var(--popover-foreground)",
+
                 primary: "var(--primary)",
                 "primary-foreground": "var(--primary-foreground)",
                 secondary: "var(--secondary)",
