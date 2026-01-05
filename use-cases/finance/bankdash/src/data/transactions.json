@@ -162,7 +162,7 @@
             "type": "credit",
             "amount": 2450.00,
             "accountId": "acc_006",
-            "status": "completed"
+            "status": "failed"
         },
         {
             "id": "txn_015",
@@ -172,7 +172,7 @@
             "type": "credit",
             "amount": 12.45,
             "accountId": "acc_002",
-            "status": "completed"
+            "status": "pending"
         }
     ]
 }

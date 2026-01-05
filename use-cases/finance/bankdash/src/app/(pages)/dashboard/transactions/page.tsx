@@ -4,6 +4,7 @@ import { Text } from "@/components/atoms/Text";
 import Link from "next/link";
 import Section from "@/components/atoms/Section";
 import CreditCardsTemplate from "@/components/templates/CreditCardsTemplate";
+import FinanceTemplate from "@/components/templates/FinanceTemplate";
 
 const page = () => {
   const CardsList = useCardList();
@@ -32,7 +33,9 @@ const page = () => {
           <div className="w-[350px]">{/* <ExpenseChartCard /> */}ss</div>
         </div>
       </Section>
-      <Section>test</Section>
+      <Section>
+        <FinanceTemplate />
+      </Section>
     </>
   );
 };

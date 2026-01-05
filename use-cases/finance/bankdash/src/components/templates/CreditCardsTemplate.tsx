@@ -13,7 +13,7 @@ const CreditCardsTemplate = ({ cards, noOfCard }: CreditCardsFeatureProps) => {
   }
 
   return (
-    <div className="flex  gap-6 overflow-x-auto overscr ">
+    <div className="flex py-4  gap-6 overflow-x-auto  ">
       {isLoading
         ? Array.from({ length: noOfCard }).map((_, index) => (
             <SkeletonCard key={index} width="350px" height="200px" />

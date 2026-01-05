@@ -4,7 +4,7 @@ interface ExpenseData {
     income: number;  // Total income for the month
 }
 
-interface Transaction {
+export interface Transaction {
     id: string;
     date: string;
     description: string;
@@ -12,7 +12,7 @@ interface Transaction {
     type: 'debit' | 'credit' | 'automatic-debit' | 'transfer' | 'payment';
     amount: number;
     accountId: string;
-    status: 'completed' | 'pending';
+    status: 'completed' | 'pending' | 'failed';
     merchantLogo?: string;
     location?: string;
     recurring?: boolean;
@@ -37,3 +37,15 @@ interface ChartProps {
 interface ExpenseChartProps {
     data?: ExpenseData[];
 }
+
+export interface TransactionsTableProps {
+    data: Transaction[];
+};
+
+export interface TransactionState {
+    stateColor: string;
+    text: string;
+
+}
+
+export type validStatuses = "pending" | "completed" | "failed";

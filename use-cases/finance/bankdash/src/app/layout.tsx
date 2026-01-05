@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interLocal.className} ${interLocal.variable}antialiased bg-gray-100 overflow-hidden mr-0`}
+        className={`${interLocal.className} ${interLocal.variable}antialiased bg-gray-100  mr-0`}
       >
         <TooltipProvider>{children}</TooltipProvider>
       </body>
