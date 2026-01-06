@@ -1,6 +1,6 @@
 # 🏦 BankDash: Digital Banking Dashboard Blueprint
 
-This repository contains the comprehensive blueprint, architectural patterns, and UI/UX specifications for the **BankDash** platform. This project is modeled after high-performance fintech applications, ensuring financial integrity, security, and a premium user experience.
+BankDash is a high-fidelity digital banking platform blueprint. This project follows modern fintech architectural patterns to ensure financial integrity, security, and a premium user experience, based on the BankDash design system.
 
 ---
 
@@ -12,41 +12,39 @@ The implementation is based on the **BankDash UI Kit**:
 
 ## 1. Information Architecture (Sitemap)
 
-The application structure is optimized for rapid access to core financial functions while maintaining strict security boundaries.
+The structure is organized by primary navigation areas, defining the user journey and application routing.
 
 ### 🔐 0.0 Authentication & Onboarding
-- **`/auth/login`**: Secure login with Biometric (FaceID/TouchID) fallback.
-- **`/auth/register`**: Tiered KYC flow (Identity verification, Document upload).
-- **`/auth/set-security`**: MFA configuration, PIN setup, and hardware key registration.
+- **`/auth/login`**: Login Screen (with Biometric option).
+- **`/auth/register`**: Registration & KYC Flow (ID scanning, Liveness Check).
+- **`/auth/set-security`**: PIN/Password setup, MFA configuration.
 
 ### 🏠 1.0 Dashboard (Home)
-- **`/app/dashboard`**: Central financial hub.
-    - **Balance Carousel**: Visual slider for multiple account types (Savings, Credit, etc.).
-    - **Quick Actions**: "Send Money," "Pay Bills," and "Request Funds" shortcuts.
-    - **Recent Transactions**: Real-time activity feed with category icons.
-    - **Spending Overview**: Weekly inflow/outflow bar charts.
+- **`/app/dashboard`**: The main overview.
+    - Global Header (Notifications, Search).
+    - Balance Carousel Widget (Checking, Savings, Credit).
+    - Quick Actions Grid (Transfer, Pay Bill).
+    - Recent Transactions Feed.
 
-### 📒 2.0 Accounts & Transactions
-- **`/app/accounts`**: Master list of all cards and accounts.
-- **`/app/accounts/:id`**: Deep-dive ledger view.
-    - **Filter System**: Search by date range, merchant, or amount.
-    - **Account Details**: Masked IBAN/Swift details with copy-to-clipboard.
-    - **Receipts**: Generate and download transaction receipts in PDF.
+### 📒 2.0 Accounts Module (The Ledger)
+- **`/app/accounts`**: All Accounts Overview.
+- **`/app/accounts/:id`**: Individual Account Detail Page.
+    - **Transaction History**: Search, Filter by Date/Category.
+    - **Account Info**: IBAN, Routing Number (Copy-to-Clipboard).
+- **`/app/transactions/:ref`**: Single Transaction Detail View (Receipt, Dispute Action).
 
-### 💸 3.0 Money Movement
-- **`/app/transfers`**: Central payment hub.
-- **`/app/transfers/wizard`**: Multi-step transfer process:
-    - `Source Select` → `Recipient` → `Amount/Details` → `Security Challenge` → `Success`.
-- **`/app/beneficiaries`**: Management of saved payees and trusted contacts.
+### 💸 3.0 Money Movement (Transfers & Pay)
+- **`/app/transfers`**: Payment Hub.
+- **`/app/transfers/new`**: New Transfer Wizard Flow (Source → Recipient → Details → Review).
+- **`/app/beneficiaries`**: Beneficiary Management (Add, Edit, Delete).
 
-### 💳 4.0 Card Management
-- **`/app/cards`**: Digital card stack (Physical vs. Virtual).
-- **Security Controls**: Toggle for "Freeze Card," "Online Payments," and "ATM Withdrawals."
-- **Limits**: Daily and monthly spending cap management.
+### 💳 4.0 Cards Management
+- **`/app/cards`**: Card Carousel (Physical & Virtual).
+- **`/app/cards/:id/settings`**: Card Controls (Freeze, Manage Limits, PIN Reset).
 
-### 📊 5.0 Financial Wellness
-- **`/app/insights`**: Category-based donut charts for monthly spending.
-- **`/app/savings-goals`**: "Vaults" or "Pots" tracking with progress percentages.
+### 📊 5.0 Financial Wellness (PFM)
+- **`/app/insights`**: Spending Analytics Overview (Charts by Category/Time).
+- **`/app/savings-goals`**: Savings Vaults/Pots (Progress Indicators).
 
 ---
 
@@ -54,44 +52,54 @@ The application structure is optimized for rapid access to core financial functi
 
 | Pattern | Implementation | Justification |
 | :--- | :--- | :--- |
-| **Microservices** | Domain-driven services (Payments, Auth, Ledger). | Independent scaling and failure isolation. |
-| **BFF (Backend for Frontend)** | API Gateway for mobile/web. | Reduces latency by aggregating multiple service calls into one. |
-| **Idempotency** | Unique `Client-Request-ID` headers. | Prevents double-charging on network retries or double-clicks. |
-| **Circuit Breaker** | Resilience wrappers on 3rd party APIs. | Prevents the app from crashing if an external KYC or SMS service is down. |
-| **Pessimistic UI** | Blocking load states for critical actions. | Ensures users do not see a "Success" state until the ledger confirms the balance. |
-| **Saga Pattern** | Distributed transaction management. | Maintains consistency across services (e.g., deducting from one account while adding to another). |
+| **Microservices** | Segmented by domain (e.g., `account-service`, `payment-service`). | Resilience and independent deployment. |
+| **BFF (Backend for Frontend)** | Dedicated API gateway for mobile/web aggregation. | Optimized performance and reduced latency. |
+| **Idempotency** | Unique client-generated keys for every transfer. | Prevents duplicate transactions on network retries. |
+| **Saga Pattern** | Distributed transaction management. | Ensures consistency across services with automated rollbacks. |
+| **Pessimistic UI** | Blocking load states for critical actions. | Ensures financial accuracy before updating the user view. |
 
 ---
 
-## 3. UI Component & Interaction Library
+## 🧠 3. Data Architecture (The Simulation Layer)
 
-### A. Visual Patterns
-- **Card/Widget Pattern**: Modular blocks for data density and ease of scanning.
-- **Data Masking**: Sensitive info (CVV, Full PAN) is hidden until a "Biometric Reveal" action is triggered.
-- **Skeleton Screens**: High-fidelity placeholders used during data fetching to reduce perceived wait time.
+The project uses a **Domain-Driven Data Structure** located in the `/data` root. This simulates a real-world banking backend where data is decoupled by business responsibility.
 
-### B. Navigation & Flow
-- **Wizard/Stepper**: Guiding users through complex processes (e.g., Loan applications or International transfers).
-- **Progressive Disclosure**: Detailed transaction metadata is hidden behind a click to keep the primary UI clean.
-- **Bottom Navigation**: (Mobile Only) Persistent access to Home, Transfers, Cards, and Profile.
+### Directory Structure
+* **📂 `/data/auth`**: Identity & Security (Users, Credentials, Active Sessions).
+* **📂 `/data/customers`**: Legal entities, KYC status, and Risk Profiles.
+* **📂 `/data/accounts`**: Core ledger info, account types, and cached balances.
+* **📂 `/data/cards`**: Card-specific data (Debit/Credit/Virtual) and processor settings.
+* **📂 `/data/transactions`**: **Immutable Ledger**. Append-only history and digital receipts.
+* **📂 `/data/payments`**: Orchestration data (Beneficiaries, Scheduled/Pending transfers).
+* **📂 `/data/loans`**: Lending domain (Amortization schedules and repayment history).
+* **📂 `/data/investments`**: Wealth domain (Holdings and non-cash valuations).
+* **📂 `/data/pfm`**: Financial Wellness (Budgets, Savings goals, Categorized insights).
+* **📂 `/data/services`**: Support tickets, dispute requests, and async service logs.
+* **📂 `/data/settings`**: User preferences and notification toggles.
+* **📂 `/data/system`**: Internal simulation (Audit logs, Exchange rates, Feature flags).
 
 ---
 
-## 4. Security & Compliance
+## 4. UI Component & Interaction Patterns
 
-To meet international banking standards (GDPR, PCI-DSS), the following are implemented:
+### Core Display Components
+- **Card/Widget Pattern**: Modular data blocks for Dashboard and PFM insights.
+- **Data Masking**: Sensitive numbers (`**** 1234`) hidden until Biometric Reveal (e.g., FaceID).
+- **Skeleton Screens**: Layout placeholders shown during data fetching to prevent layout shift.
+
+### Action and Flow Components
+- **Wizard/Stepper Flow**: Guides users through multi-step processes (e.g., New Transfer).
+- **Progressive Disclosure**: Detailed metadata is revealed only upon user action to reduce noise.
+- **Button Hierarchy**: Clear distinction between Primary (Action), Secondary (Cancel), and Destructive.
+
+---
+
+## 🛡 Security & Compliance
 * **Encryption**: AES-256 for data at rest; TLS 1.3 for data in transit.
-* **Certificate Pinning**: Hardens mobile apps against Man-in-the-Middle (MitM) attacks.
-* **Session Management**: 5-minute inactivity timeouts and concurrent session detection.
-* **Audit Trails**: Non-repudiation logs for every transaction and sensitive setting change.
+* **Audit Trails**: Every state change is recorded in `/data/system/audit-logs.json` for non-repudiation.
+* **Session Management**: Automatic timeouts (5 mins) and concurrent session detection.
 
 ---
 
-## 🚀 Next Steps
-1.  **Review**: Validate the blueprint with stakeholder teams.
-2.  **Theme Setup**: Map Figma tokens (Colors, Spacing) to the `tailwind.config.js`.
-3.  **Prototype**: Develop the high-fidelity **Transfer Wizard** as a proof of concept.
-
----
-**Maintained by:** Hazem Hisham  
-**Project Status:** 🏗 Initial Blueprint Phase
+**Project Status:** 🏗 Initial Blueprint Phase  
+**Maintained by:** Hazem Hisham
