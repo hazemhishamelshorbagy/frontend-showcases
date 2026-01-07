@@ -1,0 +1,64 @@
+insights.json
+
+🛠️ Key Technical Details
+    - Customer Linking: The customer_id strictly matches your existing customer records, allowing for O(1) or O(n) lookup in your frontend state management (like Redux or Pinia).
+    -Trend Logic: The trend_percentage is calculated using $(Current - Previous) / Previous \times 100$. A negative value indicates the user successfully reduced their spending.
+    -Category Accuracy: The categories (Groceries, Rent, etc.) match the categories.json schema we defined earlier.
+
+💡 What's next for your Dashboard?
+   This file completes the analytical side of the user experience. You now have a full data suite including:
+        -Core: Customers & Accounts
+
+        -Payments: Transactions & Transfers
+
+        -Financial Products: Cards, Loans & Investments
+
+        -Analytics: Spending Insights & Categories
+
+
+
+
+Budgets,json
+
+🛠️ Key Implementation Details:
+   -Relational Integrity: customer_id and category_id are mapped directly to your existing customers and transaction categories.
+
+-Status Logic:
+   -ON_TRACK: Actual spending (spent) is less than or equal to the planned amount.
+
+   -EXCEEDED: Actual spending has surpassed the budget, providing a flag for UI warnings or push notifications.
+
+
+- Time Scale: Each customer has a unique set of budgets for each of the last 6 months, enabling historical performance analysis (e.g., "Am I getting better at budgeting?").
+
+
+
+💡 Dashboard Use CaseProgress Bars: 
+    - Use the spent and amount values to calculate a percentage $(Spent / Amount \times 100)$ for progress bar UI components.
+    -Color Coding: Apply different colors based on the status (e.g., Green for ON_TRACK, Red for EXCEEDED).
+    - Insights Integration: You can cross-reference this with spending_insights.json to explain why a budget was exceeded (e.g., "Your utilities budget was exceeded because your electricity bill was 20% higher this month").
+
+
+
+
+saving-goals.json
+🛠️ Key Rules Applied:
+    -Relational Context: Every goal is mapped to a valid customer_id from your master list.
+    -Progress Logic:
+       -Target vs. Current: The current_amount is always <= target_amount.
+       -Completion: If current_amount reaches the target, the status is set to COMPLETED.
+    -Timeline:
+      -Start Date: Randomized within the last year to show historical saving.
+      -End Date: Set in the future, providing a deadline for the user's dashboard notifications.
+
+    -Common Goals: Uses high-intent names like Vacation, Emergency Fund, and New Car.
+
+
+💡 Dashboard Use Case
+     -Circular Progress Bars: Use $(Current / Target) \times 100$ to render radial charts for each goal.
+     - Savings Calculator: You can use the end_date to calculate the "Monthly Contribution Required" to reach the target on time.
+    - Encouragement Messages: For goals with status: "IN_PROGRESS", your UI can show messages like "You're only 250 KWD away from your Vacation goal!"
+
+
+
+

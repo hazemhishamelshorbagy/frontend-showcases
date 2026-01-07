@@ -1,0 +1,42 @@
+[
+    {
+        "device_id": "0e7c40e2-d827-4fb8-9377-927d7beca277",
+        "user_id": "e48c27bf-97c7-4db7-8b8e-201873010bc3",
+        "device_type": "DESKTOP",
+        "device_os": "macOS",
+        "device_model": "MacBook Pro M3",
+        "last_used": "2026-01-01T10:40:56Z",
+        "status": "ACTIVE",
+        "push_token": null
+    },
+    {
+        "device_id": "0eff6c6f-e294-4005-9dbb-559982a77fce",
+        "user_id": "e196b8e8-e4d7-4cb1-8be3-c3d69362277a",
+        "device_type": "MOBILE",
+        "device_os": "iOS",
+        "device_model": "iPhone 15 Pro",
+        "last_used": "2025-12-18T04:40:56Z",
+        "status": "ACTIVE",
+        "push_token": "token_8c723156-91d"
+    },
+    {
+        "device_id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "user_id": "a7b2-c3d4-e5f6",
+        "device_type": "TABLET",
+        "device_os": "Android",
+        "device_model": "Samsung Galaxy Tab S8",
+        "last_used": "2025-12-25T12:00:00Z",
+        "status": "INACTIVE",
+        "push_token": "token_1234567890abcdef"
+    },
+    {
+        "device_id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+        "user_id": "e48c27bf-97c7-4db7-8b8e-201873010bc3",
+        "device_type": "MOBILE",
+        "device_os": "iOS",
+        "device_model": "iPhone 14",
+        "last_used": "2025-12-30T15:20:00Z",
+        "status": "ACTIVE",
+        "push_token": "token_abcdef1234567890"
+    }
+]

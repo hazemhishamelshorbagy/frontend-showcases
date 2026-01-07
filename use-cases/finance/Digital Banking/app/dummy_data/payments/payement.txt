@@ -1,0 +1,78 @@
+tarnsfers.json
+🛠️ Key Implementation Rules:
+
+  -Customer Selection: Targeted 40% of the customers found in your master customers.json.
+  -Target Logic: Transfers are directed either to internal account IDs found in accounts.json or to external IBANs.
+
+Status & Scheduling:
+  -SUCCESS and FAILED entries represent historical requests.
+  -PENDING entries often include a scheduled_date in the future, allowing you to test "Upcoming Transfers" widgets.
+
+
+Beneficiary Link: 
+  -Where possible, transfers are linked to a beneficiary_id to simulate saved payment contacts.
+
+💡 Dashboard Use Case
+   -In your dashboard, you can use this data to build a "Transfer Management" screen:
+
+      -Pending Tab: Show all transfers with a future scheduled_date and status: "PENDING".
+
+      -Recent Tab: Show the last 5 SUCCESS transfers.
+
+   -Execution Logic: If a transfer is SUCCESS, ensure there is a corresponding entry in your transactions.json ledger to maintain data consistency.
+
+
+
+
+
+
+shedule-payeement.json
+  
+  ⚙️ Logic Implemented:
+      -Relational Mapping: Each record correctly maps a customer_id to a previously generated transfer_id, ensuring that the recurring payment has a source account and a target beneficiary already defined.
+      -Frequencies: Distributed across DAILY (standing orders for sweep accounts), WEEKLY (allowances/subscriptions), and MONTHLY (rent/utilities).
+      -Execution Window: All next_execution dates are set in the future (within the next 28 days) to ensure they are actionable in a "Standing Orders" UI.
+
+Operational Status:
+  -ACTIVE: Currently being processed by the system's cron job.
+  -CANCELLED: History of a setup the user has stopped.
+
+
+
+💡 Dashboard Integration Tip
+For your "Standing Orders" or "Automations" module:
+
+1- UI Display: Join this file with transfer_requests.json using the transfer_id to show the Amount and Beneficiary Name alongside the frequency.
+
+2- Toggle Action: In your frontend, the status field can be tied to a switch component, allowing users to "Pause" or "Cancel" their recurring payments.
+
+
+
+
+
+
+
+Beneficiaries.json
+
+🛠️ Key Implementation Details:
+   
+     -Distribution: Each customer has a randomized set of 0 to 5 beneficiaries, ensuring some users look "new" (no payees) while others are "power users" (full address book).
+     -IBAN Generation: Follows the Kuwaiti structure (starts with KW followed by check digits, bank code, and account number).
+     -Regional Context: Includes local banks like Kuwait Finance House (KFH) and Warba Bank, and common utility payees like Zain and the Ministry of Electricity.
+     -System Status: 90% are ACTIVE, while 10% are INACTIVE (perhaps due to expired details or user suspension), allowing you to test UI states for disabled beneficiaries.
+
+
+💡 Dashboard Integration Tip
+      -In your "Send Money" flow:
+        -Search/Filter: Use the name or bank_name to help users find their saved contacts quickly.
+        -Recent Payees: Combine this with transactions.json to show the "Last Paid" date for each beneficiary.
+        -Validation: Use the status field to prevent users from sending money to INACTIVE payees without re-verifying details.
+
+
+
+billers.json
+💡 Implementation Strategy
+     -Unique Identification: Each biller has a code (e.g., MEW-WATER for the Ministry of Electricity and Water). In a real system, this code is often used to route payments to specific government or corporate APIs.
+     -Categorization: Group billers by their category in your UI (e.g., a "Telecom" tab vs. a "Utilities" tab) to make navigation intuitive.
+     -Payment Linking: When a user pays a bill, you can link the transaction in transactions.json back to these biller_id records for detailed history reporting.
+     

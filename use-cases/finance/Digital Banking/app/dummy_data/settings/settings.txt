@@ -1,0 +1,15 @@
+user-settings.json 
+
+🛠️ Key Implementation Details
+      -Language Localization: Provides EN (English) and AR (Arabic) options, which is essential for the Kuwaiti market to support Right-to-Left (RTL) layouts.
+      -Security & Privacy:
+         -biometric_enabled: Can be used to trigger FaceID or Fingerprint prompts on mobile login.
+         -privacy_level: Can determine how much sensitive data (like full account numbers) is masked in the UI.
+    
+    -Visual Preference: The theme field allows your frontend to toggle between CSS variables for LIGHT and DARK modes.
+
+💡 Dashboard Integration Tip
+   -State Management: Load this JSON as part of your initial "User Profile" fetch so the app renders in the correct language and theme immediately.
+   -Privacy Logic: If privacy_level is HIGH, consider blurring account balances on the home screen until the user clicks an "eye" icon to reveal them.
+   -Notification Opt-in: Use notifications_enabled as a gatekeeper before calling your push notification service for transaction alerts.
+

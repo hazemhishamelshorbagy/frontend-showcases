@@ -1,0 +1,34 @@
+[
+    {
+        "card_id": "572b3a83-c3ab-4a1f-a5fc-18b926c13920",
+        "card_type": "DEBIT",
+        "atm_withdrawal_limit": 238,
+        "pos_limit": 906,
+        "online_limit": 2326,
+        "currency": "KWD"
+    },
+    {
+        "card_id": "da7d6efd-44d4-4eb7-aaab-6b2a2cc23d50",
+        "card_type": "CREDIT",
+        "atm_withdrawal_limit": 360,
+        "pos_limit": 1849,
+        "online_limit": 3868,
+        "currency": "KWD"
+    },
+    {
+        "card_id": "894f2291-c4b8-476d-a4c7-53d5486be906",
+        "card_type": "DEBIT",
+        "atm_withdrawal_limit": 150,
+        "pos_limit": 500,
+        "online_limit": 1200,
+        "currency": "KWD"
+    },
+    {
+        "card_id": "40e7fcd5-e099-481d-a0ae-b9b5b79d2a66",
+        "card_type": "CREDIT",
+        "atm_withdrawal_limit": 250,
+        "pos_limit": 1300,
+        "online_limit": 2700,
+        "currency": "KWD"
+    }
+]

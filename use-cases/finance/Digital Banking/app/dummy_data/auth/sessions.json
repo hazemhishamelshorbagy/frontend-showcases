@@ -1,0 +1,22 @@
+[
+    {
+        "session_id": "cfd7b26a-1c8c-4e58-9644-983bc622b3d0",
+        "user_id": "e48c27bf-97c7-4db7-8b8e-201873010bc3",
+        "device_id": "0e7c40e2-d827-4fb8-9377-927d7beca277",
+        "login_time": "2025-12-10T13:42:48Z",
+        "logout_time": "2025-12-10T16:21:48Z",
+        "status": "TERMINATED",
+        "ip_address": "188.70.208.127",
+        "location": "Salmiya"
+    },
+    {
+        "session_id": "d4e5f6a7-b8c9-4d0e-9f1a-2b3c4d5e6f70",
+        "user_id": "a7b2-c3d4-e5f6",
+        "device_id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "login_time": "2025-12-20T09:15:30Z",
+        "logout_time": null,
+        "status": "ACTIVE",
+        "ip_address": "188.70.208.127",
+        "location": "Kuwait City"
+    }
+]

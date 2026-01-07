@@ -1,0 +1,89 @@
+auth.json
+🛠️ Key Implementation Rules
+    -Multi-Device Support: Some customers have multiple user_id entries (e.g., one for Web, one for Mobile) to simulate real-world digital banking behavior.
+    -Security States:
+       -ACTIVE: Normal access.
+       -LOCKED: Triggered when failed_login_attempts hits 5.
+       -SUSPENDED: Manual hold placed by bank administration.
+    -Referential Integrity: Every customer_id maps back to the master customers.json.
+    -Password Management: The must_change_password flag allows you to test the "Reset Password" forced-redirect flow in your UI.
+
+💡 Dashboard Use Case
+    -Login Component: Use this JSON to mock your /auth/login endpoint—validate username and check status before allowing access.
+    -Security Center: On the user dashboard, show the last_login timestamp to help users detect unauthorized access.
+    -Admin Portal: Build a table of LOCKED users so bank staff can "Unlock" accounts by resetting failed_login_attempts to 0.
+
+
+cerdentials.json
+  🛠️ Security Rules Applied
+      -Bcrypt Simulation: The password_hash strings follow the standard $2b$cost$salt+hash format used by bcrypt, allowing you to test hashing comparison logic.
+      -Two-Factor Access: I've included a 4-digit pin field, which can be used to simulate mobile app "Quick Login" or ATM authorization.
+      -Credential Lifecycle:
+         -last_changed: Tracks when the user last rotated their password.
+         -expiry_date: Set based on high-security requirements (common in banking); if this date is past, the status flips to EXPIRED.
+      -MFA Toggle: Added mfa_enabled to help you test flows that require an extra SMS or Authenticator step during login.
+
+💡 Backend Implementation Logic
+     -Login Flow: When a user enters a password, your backend should fetch the password_hash by user_id and use a library like bcryptjs to compare the plaintext entry with the hash.
+     -Rotation Alerts: Use last_changed to prompt the user to update their password every 90 days.
+     -PIN Verification: For specific high-value transactions (like adding a new beneficiary), you can prompt the user for the pin stored here.
+
+
+
+
+devices.json
+🛠️ Key Implementation Rules
+    -Hardware Variety: Includes a realistic mix of high-end mobile devices (iPhone 15, S24 Ultra), tablets, and desktop workstations to reflect a typical Kuwaiti professional's tech stack.
+    -Device Lifecycle:
+       -ACTIVE: Currently trusted for logins and transactions.
+       -REVOKED: A device the user has manually de-authorized (e.g., after losing a phone).
+    -Notification Ready: Added a push_token field for mobile and tablet devices, which can be used to simulate sending Firebase or APNs notifications.
+    -MFA Integration: You can use this data to build a "Device Verification" screen where users must approve a login on their MOBILE device before gaining access on a DESKTOP.
+
+
+💡 Dashboard Use Case
+     -Security Settings: Build a "Managed Devices" list where users can see their active logins and click a "Log out other devices" button to set statuses to REVOKED.
+     -Smart Routing: When sending a TRANSACTION notification, check the registered_devices list to find the MOBILE device with the most recent last_used date.
+     -New Login Alert: If a user logs in from a device_id not in this list, trigger a security email notification.
+
+
+
+Sessions.json
+
+ 🛠️ Session Rules Applied
+     -Relational Accuracy: Every session points to a specific device_id owned by the user_id, allowing you to see exactly which phone or laptop was used for a login.
+     -Concurrent Sessions: Each user has 2–5 session records, simulating a user being logged in on their phone and laptop simultaneously.
+     -Geographical Context: Locations are restricted to major Kuwaiti cities (Salmiya, Hawally, etc.) with realistic local IP ranges.
+
+    -Session Lifecycle:
+       -ACTIVE: Currently logged in (has no logout_time).
+       -EXPIRED: System timed out the session after inactivity.
+       -TERMINATED: The user manually clicked "Logout."
+    
+💡 Dashboard Use Case:
+    -Security History: Create a "Recent Logins" table where users can audit their own activity.
+    -Remote Logout: Build a feature where a user can see an ACTIVE session on another device and click a button to change its status to TERMINATED (remotely logging them out).
+    -Fraud Detection: If a user has two ACTIVE sessions at the same time from two different cities (e.g., Kuwait City and Jahra), trigger a security alert.
+
+
+
+mfa.json
+
+🛠️ Key Implementation Rules:
+
+    -Method Diversity: Each user can have multiple methods registered (e.g., SMS as a primary and Email as a backup).
+    -Verification Status:
+      -verified_at: Provides a timestamp of the last successful setup or re-verification, useful for enforcing periodic security audits.
+      -status: Easily toggles whether a method is currently usable by the auth engine.
+
+    -Method Types:
+       -SMS/EMAIL: Traditional "something you have" tokens.
+       -APP: Time-based One-Time Password (TOTP) such as Google Authenticator.
+       -BIOMETRIC: References device-level security like FaceID or TouchID.
+
+💡 Dashboard Use Case
+    -Security Dashboard: Display a "Security Strength" meter based on the number of ACTIVE MFA methods a user has enabled.
+    -Auth Routing: During a sensitive action (like adding a 10,000 KWD transfer), your backend can query this JSON to decide whether to send an SMS or prompt for an App token.
+    -Setup Wizard: Identify users with only 1 method or status: "INACTIVE" and prompt them to "Secure your account with an Authenticator App."
+    
+

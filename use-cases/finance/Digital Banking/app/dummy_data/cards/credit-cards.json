@@ -1,0 +1,24 @@
+[
+    {
+        "credit_card_id": "da7d6efd-44d4-4eb7-aaab-6b2a2cc23d50",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440038",
+        "card_number": "**** **** **** 9842",
+        "credit_limit": 7431.0,
+        "used_limit": 3554.481,
+        "available_limit": 3876.519,
+        "currency": "KWD",
+        "due_date": "2026-02-25",
+        "status": "ACTIVE"
+    },
+    {
+        "credit_card_id": "40e7fcd5-e099-481d-a0ae-b9b5b79d2a66",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440119",
+        "card_number": "**** **** **** 8497",
+        "credit_limit": 4175.0,
+        "used_limit": 1722.078,
+        "available_limit": 2452.922,
+        "currency": "KWD",
+        "due_date": "2026-02-25",
+        "status": "ACTIVE"
+    }
+]

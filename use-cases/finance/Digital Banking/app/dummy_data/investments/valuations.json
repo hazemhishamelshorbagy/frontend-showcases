@@ -1,0 +1,92 @@
+[
+    {
+        "portfolio_id": "d01c2cc0-66a2-4052-b0af-be0127280de3",
+        "date": "2026-01-03",
+        "portfolio_value": 12437.35,
+        "profit_loss_pct": 0.0057
+    },
+    {
+        "portfolio_id": "d01c2cc0-66a2-4052-b0af-be0127280de3",
+        "date": "2026-01-04",
+        "portfolio_value": 12440.428,
+        "profit_loss_pct": 0.0247
+    },
+    {
+        "portfolio_id": "d01c2cc0-66a2-4052-b0af-be0127280de3",
+        "date": "2026-01-05",
+        "portfolio_value": 12439.493,
+        "profit_loss_pct": -0.0075
+    },
+    {
+        "portfolio_id": "d01c2cc0-66a2-4052-b0af-be0127280de3",
+        "date": "2026-01-06",
+        "portfolio_value": 12445.043,
+        "profit_loss_pct": 0.0446
+    },
+    {
+        "portfolio_id": "d01c2cc0-66a2-4052-b0af-be0127280de3",
+        "date": "2026-01-07",
+        "portfolio_value": 12444.695,
+        "profit_loss_pct": -0.0028
+    },
+    {
+        "portfolio_id": "162b51d7-9f8d-4608-919b-a6efa919bc38",
+        "date": "2026-01-03",
+        "portfolio_value": 3395.12,
+        "profit_loss_pct": 0.0032
+    },
+    {
+        "portfolio_id": "162b51d7-9f8d-4608-919b-a6efa919bc38",
+        "date": "2026-01-04",
+        "portfolio_value": 3396.784,
+        "profit_loss_pct": 0.0049
+    },
+    {
+        "portfolio_id": "162b51d7-9f8d-4608-919b-a6efa919bc38",
+        "date": "2026-01-05",
+        "portfolio_value": 3398.45,
+        "profit_loss_pct": 0.005
+    },
+    {
+        "portfolio_id": "162b51d7-9f8d-4608-919b-a6efa919bc38",
+        "date": "2026-01-06",
+        "portfolio_value": 3397.516,
+        "profit_loss_pct": -0.0027
+    },
+    {
+        "portfolio_id": "162b51d7-9f8d-4608-919b-a6efa919bc38",
+        "date": "2026-01-07",
+        "portfolio_value": 3397.516,
+        "profit_loss_pct": 0.0
+    },
+    {
+        "portfolio_id": "f4e5d6c7-b8a9-4dab-8c0d-e1f2a3b4c5d6",
+        "date": "2026-01-03",
+        "portfolio_value": 14010.0,
+        "profit_loss_pct": 0.0071
+    },
+    {
+        "portfolio_id": "f4e5d6c7-b8a9-4dab-8c0d-e1f2a3b4c5d6",
+        "date": "2026-01-04",
+        "portfolio_value": 14005.0,
+        "profit_loss_pct": -0.0036
+    },
+    {
+        "portfolio_id": "f4e5d6c7-b8a9-4dab-8c0d-e1f2a3b4c5d6",
+        "date": "2026-01-05",
+        "portfolio_value": 14008.0,
+        "profit_loss_pct": 0.0021
+    },
+    {
+        "portfolio_id": "f4e5d6c7-b8a9-4dab-8c0d-e1f2a3b4c5d6",
+        "date": "2026-01-06",
+        "portfolio_value": 14000.0,
+        "profit_loss_pct": -0.0057
+    },
+    {
+        "portfolio_id": "f4e5d6c7-b8a9-4dab-8c0d-e1f2a3b4c5d6",
+        "date": "2026-01-07",
+        "portfolio_value": 14000.0,
+        "profit_loss_pct": 0.0
+    }
+]

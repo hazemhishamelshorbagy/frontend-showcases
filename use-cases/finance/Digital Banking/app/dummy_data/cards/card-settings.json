@@ -1,0 +1,14 @@
+[
+    {
+        "card_id": "572b3a83-c3ab-4a1f-a5fc-18b926c13920",
+        "freeze_status": false,
+        "pin_reset_required": false,
+        "notifications_enabled": false
+    },
+    {
+        "card_id": "894f2291-c4b8-476d-a4c7-53d5486be906",
+        "freeze_status": true,
+        "pin_reset_required": false,
+        "notifications_enabled": true
+    }
+]

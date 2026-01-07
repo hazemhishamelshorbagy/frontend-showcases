@@ -1,0 +1,74 @@
+[
+    {
+        "account_id": "5e5c4a7d-8266-43da-ab19-8bf6f9476de9",
+        "available_balance": 6858.079,
+        "hold_amount": 887.275,
+        "ledger_balance": 7745.354,
+        "currency": "KWD",
+        "last_updated": "2026-01-06T15:34:36.255333"
+    },
+    {
+        "account_id": "799882ee-e2ab-4877-a1b6-7b0adc1fd009",
+        "available_balance": 28293.169,
+        "hold_amount": 0.0,
+        "ledger_balance": 28293.169,
+        "currency": "KWD",
+        "last_updated": "2026-01-06T19:25:36.255333"
+    },
+    {
+        "account_id": "18090887-2033-4f93-b6c8-5431665a3962",
+        "available_balance": 11097.23,
+        "hold_amount": 0.0,
+        "ledger_balance": 11097.23,
+        "currency": "KWD",
+        "last_updated": "2026-01-06T12:15:36.255333"
+    },
+    {
+        "account_id": "902d8471-1971-462f-89f5-1773010776b6",
+        "available_balance": 1952.483,
+        "hold_amount": 0.0,
+        "ledger_balance": 1952.483,
+        "currency": "KWD",
+        "last_updated": "2026-01-06T10:05:36.255333"
+    },
+    {
+        "account_id": "f51a243b-482f-4db7-a720-3375836f3325",
+        "available_balance": 7480.0,
+        "hold_amount": 0.0,
+        "ledger_balance": 7480.0,
+        "currency": "KWD",
+        "last_updated": "2026-01-06T08:55:36.255333"
+    },
+    {
+        "account_id": "3b2c1d0e-9f8e-7d6c-5b4a-3a2b1c0d9e8f",
+        "available_balance": 12500.5,
+        "hold_amount": 500.0,
+        "ledger_balance": 13000.5,
+        "currency": "KWD",
+        "last_updated": "2026-01-06T07:45:36.255333"
+    },
+    {
+        "account_id": "4c3d2e1f-0a9b-8c7d-6e5f-4d3c2b1a0f9e",
+        "available_balance": 20450.75,
+        "hold_amount": 0.0,
+        "ledger_balance": 20450.75,
+        "currency": "KWD",
+        "last_updated": "2026-01-06T06:35:36.255333"
+    },
+    {
+        "account_id": "5d4e3f2a-1b0c-9d8e-7f6a-5e4d3c2b1a0f",
+        "available_balance": 9800.0,
+        "hold_amount": 200.0,
+        "ledger_balance": 10000.0,
+        "currency": "KWD",
+        "last_updated": "2026-01-06T05:25:36.255333"
+    },
+    {
+        "account_id": "6e5f4a3b-2c1d-0e9f-8a7b-6f5e4d3c2b1a",
+        "available_balance": 15000.0,
+        "hold_amount": 0.0,
+        "ledger_balance": 15000.0,
+        "currency": "KWD",
+        "last_updated": "2026-01-06T04:15:36.255333"
+    }
+]

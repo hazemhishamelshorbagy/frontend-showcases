@@ -1,0 +1,89 @@
+[
+    {
+        "transaction_id": "5e3eb377-0f9e-4ee2-8f5e-e6d734302011",
+        "account_id": "96cc2e76-0bf2-4222-9c2e-3f772525e1fa",
+        "card_id": "1820b770-aebb-4fb8-a598-fb70aebc1f1c",
+        "type": "POS",
+        "direction": "DEBIT",
+        "amount": 267.313,
+        "currency": "KWD",
+        "status": "SUCCESS",
+        "merchant_name": "Carrefour",
+        "channel": "Web",
+        "created_at": "2025-07-11T05:33:37"
+    },
+    {
+        "transaction_id": "8d087c2d-1dae-405c-9fdb-bd927c04d3d8",
+        "account_id": "8ad17221-6881-4bcc-9064-86411ffd319a",
+        "card_id": null,
+        "type": "TRANSFER",
+        "direction": "DEBIT",
+        "amount": 3386.843,
+        "status": "SUCCESS",
+        "merchant_name": "Transfer to ab59938c",
+        "created_at": "2025-07-11T15:01:40"
+    },
+    {
+        "transaction_id": "f4c2e8b1-3c4d-4e5f-9a0b-1c2d3e4f5a6b",
+        "account_id": "f51a243b-482f-4db7-a720-3375836f3325",
+        "card_id": "da7d6efd-44d4-4eb7-aaab-6b2a2cc23d50",
+        "type": "ONLINE",
+        "direction": "DEBIT",
+        "amount": 125.75,
+        "currency": "KWD",
+        "status": "SUCCESS",
+        "merchant_name": "Amazon",
+        "channel": "Mobile",
+        "created_at": "2025-07-12T10:15:22"
+    },
+    {
+        "transaction_id": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+        "account_id": "18090887-2033-4f93-b6c8-5431665a3962",
+        "card_id": null,
+        "type": "DEPOSIT",
+        "direction": "CREDIT",
+        "amount": 5000.0,
+        "currency": "KWD",
+        "status": "SUCCESS",
+        "merchant_name": "Salary",
+        "created_at": "2025-07-13T09:00:00"
+    },
+    {
+        "transaction_id": "b7c8d9e0-f1a2-3b4c-5d6e-7f8a9b0c1d2e",
+        "account_id": "5d4e3f2a-1b0c-9d8e-7f6a-5e4d3c2b1a0f",
+        "card_id": "40e7fcd5-e099-481d-a0ae-b9b5b79d2a66",
+        "type": "ATM_WITHDRAWAL",
+        "direction": "DEBIT",
+        "amount": 200.0,
+        "currency": "KWD",
+        "status": "SUCCESS",
+        "merchant_name": "Kuwait ATM",
+        "channel": "ATM",
+        "created_at": "2025-07-14T14:45:10"
+    },
+    {
+        "transaction_id": "c3d4e5f6-a7b8-9c0d-e1f2-a3b4c5d6e7f8",
+        "account_id": "4c3d2e1f-0a9b-8c7d-6e5f-4d3c2b1a0f9e",
+        "card_id": null,
+        "type": "TRANSFER",
+        "direction": "CREDIT",
+        "amount": 1500.0,
+        "currency": "KWD",
+        "status": "SUCCESS",
+        "merchant_name": "Transfer from cd12345e",
+        "created_at": "2025-07-15T11:30:45"
+    },
+    {
+        "transaction_id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+        "account_id": "6e5f4a3b-2c1d-0e9f-8a7b-6f5e4d3c2b1a",
+        "card_id": "572b3a83-c3ab-4a1f-a5fc-18b926c13920",
+        "type": "POS",
+        "direction": "DEBIT",
+        "amount": 75.5,
+        "currency": "KWD",
+        "status": "SUCCESS",
+        "merchant_name": "Zara",
+        "channel": "In-Store",
+        "created_at": "2025-07-16T16:20:30"
+    }
+]

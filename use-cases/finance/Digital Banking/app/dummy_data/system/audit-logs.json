@@ -1,0 +1,32 @@
+[
+    {
+        "log_id": "f2cf913e-520e-4580-b886-dc77bfd9ed5b",
+        "user_id": "e196b8e8-e4d7-4cb1-8be3-c3d69362277a",
+        "action": "PASSWORD_CHANGED",
+        "description": "Account password updated",
+        "timestamp": "2026-01-02T02:10:55Z",
+        "ip_address": "188.70.87.112",
+        "status": "SUCCESS",
+        "severity": "HIGH"
+    },
+    {
+        "log_id": "60496a0b-b4f7-4bea-84cc-f584cd957fde",
+        "user_id": "e48c27bf-97c7-4db7-8b8e-201873010bc3",
+        "action": "ADDRESS_UPDATED",
+        "description": "Home address changed in profile settings",
+        "timestamp": "2025-12-31T00:08:55Z",
+        "ip_address": "188.70.25.59",
+        "status": "SUCCESS",
+        "severity": "INFO"
+    },
+    {
+        "log_id": "a7b2c3d4-e5f6-4789-abcd-0e1f2a",
+        "user_id": "a7b2-c3d4-e5f6",
+        "action": "MFA_ENABLED",
+        "description": "Multi-factor authentication enabled via app",
+        "timestamp": "2025-11-05T10:00:00Z",
+        "ip_address": "188.70.25.59",
+        "status": "SUCCESS",
+        "severity": "MEDIUM"
+    }
+]

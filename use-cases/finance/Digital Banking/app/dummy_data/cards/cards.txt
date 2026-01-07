@@ -1,0 +1,38 @@
+Debits Card :
+
+Business Logic Implemented:
+- Security Masking: Card numbers are stored in a masked format to reflect PCI-DSS compliance standards mentioned in your blueprint.
+
+- Constraint Validation: The daily_spending_limit for each card is dynamically calculated to be less than or equal to the associated account's daily_limit.
+
+- Future Expiry: Expiry dates are randomized between 3 to 5 years from today.
+
+- Status Distribution: Cards are primarily ACTIVE, with a small percentage marked as BLOCKED to test UI error states.
+
+
+
+Credit Cards :
+
+Business Logic Implemented:
+
+-Selective Issuance: Only 60% of customers were granted credit cards, simulating varying eligibility and risk profiles.
+
+-Credit Math:
+- $Available\ Limit = Credit\ Limit - Used\ Limit$Ensures that 
+- $Used\ Limit < Credit\ Limit$ for all records.
+
+-Billing Cycle: The due_date is set to the 25th of the following month, reflecting a standard monthly billing cycle.
+-Privacy Compliance: Card numbers are masked, consistent with the debit_cards.json logic and banking security standards.
+
+
+
+Card Limits :
+
+-Unified Limit Management: One file handles both Debit and Credit card limits by referencing their respective IDs.
+
+-Usage Segmentation:
+ -ATM: For physical cash withdrawals.
+ -POS: For physical store payments (Point of Sale).
+ -Online: For e-commerce and web transactions.
+ -Range Consistency: 
+ All values are within your specified KWD ranges, reflecting realistic banking constraints in Kuwait.

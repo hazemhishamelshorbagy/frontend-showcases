@@ -1,0 +1,25 @@
+notification.json
+
+🛠️ Key Rules Applied
+
+   -High Density: Each customer has between 10 and 50 notifications, creating a "lived-in" feel for your application's inbox.
+   -Smart Linking: TRANSACTION types include a related_entity_id pointing back to transactions.json, allowing the UI to link directly to the transaction details.
+   -Omnichannel Simulation: Notifications are distributed across PUSH, EMAIL, SMS, and IN_APP to reflect a modern multi-channel banking strategy.
+   -Content Variety:
+      -Transactional: Real-time spending/credit alerts.
+      -Actionable Alerts: Bill reminders and low balance warnings.
+      -Security: Login and PIN change alerts.
+      -Growth: Marketing promotions for loans and investments.
+    
+💡 Dashboard Use Case
+     -Notification Bell: Use the count of records with status: "UNREAD" for your navbar badge.
+     -Activity Feed: On the main dashboard, show the 5 most recent notifications, regardless of type.
+     -Direct Navigation: When a user clicks a notification with a related_entity_id, navigate them directly to the associated Transaction or Transfer record.
+
+-Realistic behavior
+
+70% of notifications = transactional alerts
+
+20% = security alerts
+
+10% = promotional or educational

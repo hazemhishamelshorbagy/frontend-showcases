@@ -1,0 +1,58 @@
+[
+    {
+        "account_id": "5e5c4a7d-8266-43da-ab19-8bf6f9476de9",
+        "daily_limit": 1371,
+        "monthly_limit": 8816,
+        "single_transaction_limit": 1436,
+        "currency": "KWD"
+    },
+    {
+        "account_id": "799882ee-e2ab-4877-a1b6-7b0adc1fd009",
+        "daily_limit": 1071,
+        "monthly_limit": 14749,
+        "single_transaction_limit": 3003,
+        "currency": "KWD"
+    },
+    {
+        "account_id": "18090887-2033-4f93-b6c8-5431665a3962",
+        "daily_limit": 1282,
+        "monthly_limit": 14757,
+        "single_transaction_limit": 2200,
+        "currency": "KWD"
+    },
+    {
+        "account_id": "902d8471-1971-462f-89f5-1773010776b6",
+        "daily_limit": 1585,
+        "monthly_limit": 13919,
+        "single_transaction_limit": 1750,
+        "currency": "KWD"
+    },
+    {
+        "account_id": "f51a243b-482f-4db7-a720-3375836f3325",
+        "daily_limit": 1200,
+        "monthly_limit": 10000,
+        "single_transaction_limit": 1500,
+        "currency": "KWD"
+    },
+    {
+        "account_id": "3b2c1d0e-9f8e-7d6c-5b4a-3a2b1c0d9e8f",
+        "daily_limit": 2000,
+        "monthly_limit": 15000,
+        "single_transaction_limit": 2500,
+        "currency": "KWD"
+    },
+    {
+        "account_id": "4c3d2e1f-0a9b-8c7d-6e5f-4d3c2b1a0f9e",
+        "daily_limit": 1750,
+        "monthly_limit": 12500,
+        "single_transaction_limit": 2000,
+        "currency": "KWD"
+    },
+    {
+        "account_id": "5d4e3f2a-1b0c-9d8e-7f6a-5e4d3c2b1a0f",
+        "daily_limit": 1300,
+        "monthly_limit": 11000,
+        "single_transaction_limit": 1600,
+        "currency": "KWD"
+    }
+]

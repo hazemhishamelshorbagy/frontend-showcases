@@ -1,0 +1,38 @@
+[
+    {
+        "transfer_id": "8b23f1a2-67d4-4b9e-91c2-3f88192a0041",
+        "source_account_id": "5e5c4a7d-8266-43da-ab19-8bf6f9476de9",
+        "target_account_id": "KW1290384455667788990012",
+        "amount": 1250.500,
+        "currency": "KWD",
+        "status": "PENDING",
+        "scheduled_date": "2026-02-15",
+        "channel": "Mobile",
+        "beneficiary_id": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+        "created_at": "2026-01-05T14:30:00Z"
+    },
+    {
+        "transfer_id": "3f9a8b7c-1e2d-4091-a6b3-f0e9d8c7b6a5",
+        "source_account_id": "2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6f7a",
+        "target_account_id": "96cc2e76-0bf2-4222-9c2e-3f772525e1fa",
+        "amount": 45.250,
+        "currency": "KWD",
+        "status": "SUCCESS",
+        "scheduled_date": null,
+        "channel": "Web",
+        "beneficiary_id": null,
+        "created_at": "2026-01-01T09:15:22Z"
+    },
+    {
+        "transfer_id": "5d6e7f8a-9b0c-4d5e-8f1a-2b3c4d5e6f7a",
+        "source_account_id": "799882ee-e2ab-4877-a1b6-7b0adc1fd009",
+        "target_account_id": "KW5500112233445566778899",
+        "amount": 3000.000,
+        "currency": "KWD",
+        "status": "FAILED",
+        "scheduled_date": "2026-01-20",
+        "channel": "Mobile",
+        "beneficiary_id": "d4e5f6a7-b8c9-4d0e-9f1a-2b3c4d5e6f70",
+        "created_at": "2026-01-03T11:45:00Z"
+    }
+]

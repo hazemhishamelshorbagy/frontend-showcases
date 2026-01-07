@@ -1,0 +1,72 @@
+[
+    {
+        "schedule_id": "1b792fd0-7a6c-4593-8130-0d8aae40ee1d",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2024-06-26",
+        "amount": 1461.613,
+        "status": "PAID"
+    },
+    {
+        "schedule_id": "10814ece-bbe9-40e4-9f74-89d870ec0818",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2024-07-26",
+        "amount": 1461.613,
+        "status": "PAID"
+    },
+    {
+        "schedule_id": "9b746efd-3514-4536-b3ac-4d0f853df515",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2024-08-26",
+        "amount": 1461.613,
+        "status": "PAID"
+    },
+    {
+        "schedule_id": "185685a9-370a-4f0b-8170-7db5058bfda6",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2024-09-26",
+        "amount": 1461.613,
+        "status": "PAID"
+    },
+    {
+        "schedule_id": "53fe3a9b-d894-4d94-a6fa-f9a60b0bb18c",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2024-10-26",
+        "amount": 1461.613,
+        "status": "PAID"
+    },
+    {
+        "schedule_id": "f4c3e2d1-5b6a-4c7d-8e9f-0a1b2c3d4e5f",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2024-11-26",
+        "amount": 1461.613,
+        "status": "PAID"
+    },
+    {
+        "schedule_id": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2024-12-26",
+        "amount": 1461.613,
+        "status": "PENDING"
+    },
+    {
+        "schedule_id": "f6e5d4c3-b2a1-0f9e-8d7c-6b5a4e3f2g1h",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2025-01-26",
+        "amount": 1461.613,
+        "status": "PENDING"
+    },
+    {
+        "schedule_id": "9a8b7c6d-5e4f-3a2b-1c0d-e9f8g7h6i5j4",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2025-02-26",
+        "amount": 1461.613,
+        "status": "PENDING"
+    },
+    {
+        "schedule_id": "4d3c2b1a-0f9e-8d7c-6b5a-4e3f2g1h0i9j",
+        "loan_id": "ffeb86a1-be83-457e-ae97-56386a62bf9d",
+        "due_date": "2025-03-26",
+        "amount": 1461.613,
+        "status": "PENDING"
+    }
+]

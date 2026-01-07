@@ -1,0 +1,29 @@
+[
+    {
+        "customer_id": "550e8400-e29b-41d4-a716-446655440000",
+        "language": "AR",
+        "notifications_enabled": false,
+        "biometric_enabled": true,
+        "theme": "LIGHT",
+        "privacy_level": "LOW",
+        "last_updated": "2026-01-07T00:00:00Z"
+    },
+    {
+        "customer_id": "550e8400-e29b-41d4-a716-446655440123",
+        "language": "EN",
+        "notifications_enabled": true,
+        "biometric_enabled": false,
+        "theme": "DARK",
+        "privacy_level": "HIGH",
+        "last_updated": "2026-01-07T00:00:00Z"
+    },
+    {
+        "customer_id": "550e8400-e29b-41d4-a716-446655440456",
+        "language": "FR",
+        "notifications_enabled": true,
+        "biometric_enabled": true,
+        "theme": "SYSTEM_DEFAULT",
+        "privacy_level": "MEDIUM",
+        "last_updated": "2026-01-07T00:00:00Z"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "insight_id": "d4fbca25-5239-4cea-927a-08cb6755a0fd",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440000",
+        "period": "2025-11",
+        "category_totals": {
+            "GROCERIES": 276.762,
+            "ENTERTAINMENT": 355.157,
+            "UTILITIES": 163.041,
+            "RENT": 445.465,
+            "TRANSPORT": 243.176,
+            "OTHER": 213.46
+        },
+        "total_spending": 1697.061,
+        "trend_percentage": 12.45,
+        "alerts": [
+            "High leisure spending",
+            "Spending increased by 12.45% compared to October"
+        ]
+    },
+    {
+        "insight_id": "8ca01183-8fa4-48bd-8732-399cd05c5aca",
+        "customer_id": "6ec537d4-c9f4-4a6b-b463-1c977f7938ab",
+        "period": "2025-12",
+        "category_totals": {
+            "GROCERIES": 120.450,
+            "ENTERTAINMENT": 45.200,
+            "UTILITIES": 210.000,
+            "RENT": 650.000,
+            "TRANSPORT": 95.310,
+            "OTHER": 112.500
+        },
+        "total_spending": 1233.460,
+        "trend_percentage": -5.20,
+        "alerts": []
+    }
+]

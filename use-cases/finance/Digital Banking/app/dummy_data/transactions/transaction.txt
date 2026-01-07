@@ -1,0 +1,13 @@
+transactions.json
+Logical Rules Applied:
+
+-Double-Entry Transfers: Every TRANSFER type transaction automatically generates two records—a DEBIT from the sender's account and a CREDIT to the receiver's account—to maintain ledger integrity.
+
+-Realistic Spending:
+  -POS: Small to medium daily expenses (1–300 KWD) at merchants like Starbucks, Talabat, and Zara.
+  -ATM: Cash withdrawals (10–500 KWD) specifically linked to Debit Cards.
+  -Bills: Monthly utility and telecom payments (Zain, Ooredoo, etc.).
+
+-Channel Consistency: Transactions are distributed across Mobile, Web, and physical ATM channels.
+-Status Distribution: Includes a mix of SUCCESS, FAILED (3%), and PENDING (5%) statuses to test UI error handling and loading states.
+-Chronological Order: All 400 transactions are sorted by created_at over the last 6 months.

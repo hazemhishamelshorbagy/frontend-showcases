@@ -1,0 +1,17 @@
+audti logs.json
+
+🛠️ Key Implementation Rules
+    
+    -Action Tracking: Records a variety of events from simple LOGIN_SUCCESS to administrative changes like LIMIT_INCREASE_REQUESTED.
+    -Severity Levels:
+       -INFO: Standard user activity (Logins, profile views).
+       -HIGH: Sensitive changes that impact financial security (Password changes, credit limit requests, new beneficiaries).
+    -Traceability: Every log includes a timestamp and ip_address, allowing for the reconstruction of a user's session in case of a security incident.
+    -Outcome Mapping: Uses the status field to distinguish between completed actions and thwarted attempts (e.g., LOGIN_FAILED).
+
+💡 Dashboard Use Case
+   -Customer Activity Feed: Show the user their own recent activity so they can verify that all actions (like a beneficiary addition) were performed by them.
+   -Fraud Investigation: If a customer reports a missing balance, an admin can filter these logs by user_id and severity: "HIGH" to see if a password was recently changed from an unusual IP.
+   -Regulatory Reporting: Export these logs to satisfy Central Bank of Kuwait requirements for "immutable audit trails" on financial transactions and profile modifications.
+
+   

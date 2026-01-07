@@ -1,0 +1,14 @@
+balances.json
+
+Key Logic 
+- Applied:Decoupling: Balances are stored separately from the account profile to simulate real-time caching behavior.
+- Formula: $ledger_balance = available_balance + hold_amount$.
+- Precision: Values are calculated in KWD with 3 decimal places.Auditability: Each record includes a last_updated timestamp within a recent 24-hour window.
+
+
+limits.json
+
+Integration Notes:
+-Account Linkage: Every entry corresponds to an existing account_id from your core ledger.
+-UI Use Case: In the "New Transfer Wizard," you can use this data to disable the "Submit" button if a user enters an amount exceeding their single_transaction_limit.
+-Security Layer: These limits reflect the restrictions defined in the risk-profiles.json

@@ -1,0 +1,77 @@
+{
+    "riskProfiles": [
+        {
+            "customerId": "550e8400-e29b-41d4-a716-446655440000",
+            "overallRiskScore": 24,
+            "riskRating": "Low",
+            "lastAssessmentDate": "2025-12-01T10:30:00Z",
+            "factors": {
+                "kycCompleteness": 1.0,
+                "transactionConsistency": 0.95,
+                "geographicRisk": "Low"
+            },
+            "alerts": [],
+            "restrictions": {
+                "canPerformInternationalTransfers": true,
+                "canRequestLoan": true,
+                "dailyTransferLimit": 50000.00,
+                "requiresManualReviewAbove": 10000.00
+            }
+        },
+        {
+            "customerId": "550e8400-e29b-41d4-a716-446655440001",
+            "overallRiskScore": 78,
+            "riskRating": "High",
+            "lastAssessmentDate": "2026-01-05T14:20:00Z",
+            "factors": {
+                "kycCompleteness": 0.75,
+                "transactionConsistency": 0.40,
+                "geographicRisk": "High"
+            },
+            "alerts": [
+                {
+                    "id": "ALT-001",
+                    "type": "SUSPICIOUS_ACTIVITY",
+                    "severity": "CRITICAL",
+                    "description": "Rapid succession of small transfers to high-risk jurisdiction.",
+                    "timestamp": "2026-01-06T09:15:00Z",
+                    "status": "OPEN"
+                }
+            ],
+            "restrictions": {
+                "canPerformInternationalTransfers": false,
+                "canRequestLoan": false,
+                "dailyTransferLimit": 1000.00,
+                "requiresManualReviewAbove": 0.00,
+                "accountLockStatus": "PARTIAL_FREEZE"
+            }
+        },
+        {
+            "customerId": "550e8400-e29b-41d4-a716-446655440002",
+            "overallRiskScore": 45,
+            "riskRating": "Medium",
+            "lastAssessmentDate": "2025-11-20T08:45:00Z",
+            "factors": {
+                "kycCompleteness": 0.90,
+                "transactionConsistency": 0.70,
+                "geographicRisk": "Medium"
+            },
+            "alerts": [
+                {
+                    "id": "ALT-002",
+                    "type": "UNUSUAL_LOGIN",
+                    "severity": "MEDIUM",
+                    "description": "Login from unrecognized device in a new location.",
+                    "timestamp": "2025-11-22T12:00:00Z",
+                    "status": "RESOLVED"
+                }
+            ],
+            "restrictions": {
+                "canPerformInternationalTransfers": true,
+                "canRequestLoan": true,
+                "dailyTransferLimit": 20000.00,
+                "requiresManualReviewAbove": 5000.00
+            }
+        }
+    ]
+}

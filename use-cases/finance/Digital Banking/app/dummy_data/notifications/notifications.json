@@ -1,0 +1,62 @@
+[
+    {
+        "notification_id": "1564c6b7-8e44-4780-bac8-5f1f20055eb9",
+        "customer_id": "61baa1a9-fb18-4ee6-b533-8cd48753cda3",
+        "type": "TRANSACTION",
+        "category": "DEBIT",
+        "title": "Transaction Alert",
+        "message": "Your account was debited for 45.500 KWD at Starbucks.",
+        "status": "READ",
+        "channel": "PUSH",
+        "created_at": "2025-10-27T08:45:01Z",
+        "related_entity_id": "68bba9ec-565f-4cd6-94c4-5596e32a5ca7"
+    },
+    {
+        "notification_id": "f2a1b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440000",
+        "type": "SECURITY",
+        "category": "GENERAL",
+        "title": "Security Alert",
+        "message": "New login detected from a Chrome browser on Windows.",
+        "status": "UNREAD",
+        "channel": "EMAIL",
+        "created_at": "2025-12-15T14:20:00Z",
+        "related_entity_id": null
+    },
+    {
+        "notification_id": "a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440001",
+        "type": "ALERT",
+        "category": "FRAUD",
+        "title": "Fraud Alert",
+        "message": "Suspicious activity detected on your account. Please review immediately.",
+        "status": "UNREAD",
+        "channel": "SMS",
+        "created_at": "2026-01-06T09:20:00Z",
+        "related_entity_id": "ALT-001"
+    },
+    {
+        "notification_id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440002",
+        "type": "PROMOTION",
+        "category": "OFFER",
+        "title": "Special Offer Just for You!",
+        "message": "Get 5% cashback on all purchases made this weekend with your credit card.",
+        "status": "READ",
+        "channel": "PUSH",
+        "created_at": "2025-11-20T10:00:00Z",
+        "related_entity_id": null
+    },
+    {
+        "notification_id": "e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440003",
+        "type": "ACCOUNT",
+        "category": "UPDATE",
+        "title": "Account Update",
+        "message": "Your account settings have been successfully updated.",
+        "status": "READ",
+        "channel": "EMAIL",
+        "created_at": "2025-12-05T16:30:00Z",
+        "related_entity_id": null
+    }
+]

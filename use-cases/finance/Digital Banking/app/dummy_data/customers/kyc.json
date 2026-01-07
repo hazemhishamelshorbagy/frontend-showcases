@@ -1,0 +1,32 @@
+[
+    {
+        "customer_id": "550e8400-e29b-41d4-a716-446655440000",
+        "kyc_status": "VERIFIED",
+        "verification_date": "2025-12-15"
+    },
+    {
+        "customer_id": "550e8400-e29b-41d4-a716-446655440001",
+        "kyc_status": "PENDING",
+        "verification_date": null
+    },
+    {
+        "customer_id": "550e8400-e29b-41d4-a716-446655440002",
+        "kyc_status": "VERIFIED",
+        "verification_date": "2024-08-10"
+    },
+    {
+        "customer_id": "550e8400-e29b-41d4-a716-446655440003",
+        "kyc_status": "REJECTED",
+        "verification_date": null
+    },
+    {
+        "customer_id": "550e8400-e29b-41d4-a716-446655440004",
+        "kyc_status": "VERIFIED",
+        "verification_date": "2023-11-05"
+    },
+    {
+        "customer_id": "550e8400-e29b-41d4-a716-446655440005",
+        "kyc_status": "PENDING",
+        "verification_date": null
+    }
+]

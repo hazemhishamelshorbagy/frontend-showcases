@@ -1,0 +1,26 @@
+[
+    {
+        "mfa_id": "c8e6f255-91d3-4dcf-b189-ee3067e8de08",
+        "user_id": "e48c27bf-97c7-4db7-8b8e-201873010bc3",
+        "method": "APP",
+        "enabled": true,
+        "verified_at": "2025-04-26T01:46:51Z",
+        "status": "ACTIVE"
+    },
+    {
+        "mfa_id": "167d7def-94e2-4b22-8c09-8e2902946208",
+        "user_id": "e48c27bf-97c7-4db7-8b8e-201873010bc3",
+        "method": "SMS",
+        "enabled": true,
+        "verified_at": "2025-02-19T01:46:51Z",
+        "status": "ACTIVE"
+    },
+    {
+        "mfa_id": "a9f5d6e2-3c4b-4f8e-9d2a-1b2c3d4e5f60",
+        "user_id": "a7b2-c3d4-e5f6",
+        "method": "APP",
+        "enabled": true,
+        "verified_at": "2025-11-05T10:00:00Z",
+        "status": "ACTIVE"
+    }
+]

@@ -1,0 +1,45 @@
+services-request.json
+
+🛠️ Key Implementation Rules
+     -Customer Distribution: Every customer in your database now has 1 to 3 active or historical service requests.
+     -Service Lifecycle:
+       -OPEN: Newly submitted, waiting for agent assignment.
+       -IN_PROGRESS: Currently being handled by the back-office team.
+       -RESOLVED: The request is closed (e.g., the cheque book was mailed or the dispute settled).
+     
+    - Extended Metadata: I've added a priority (LOW, MEDIUM, HIGH) and last_updated timestamp to allow for more complex UI filtering and SLA tracking.
+    -Regional Context: Specific types like CHEQUE_BOOK and CARD_REPLACEMENT are standard for Kuwaiti retail banking.
+
+
+
+💡 Dashboard Use Case
+     -Help Desk Widget: Show the user's latest service request on the home screen if the status is not RESOLVED.
+
+     -Status Timeline: Use submitted_at and last_updated to create a visual "tracking" stepper (e.g., Requested → Processing → Completed).
+
+     -Filtered View: Allow users to filter their history by request type (e.g., "Show all my disputes").
+   
+
+
+disputes.json
+🛠️ Key Implementation Rules
+    -Referential Integrity:
+       -transaction_id: Strictly references IDs found in transactions.json that have a status of FAILED.
+       -customer_id: Mapped via the account_id of the original transaction to ensure the right user owns the dispute.
+    -Reasoning: Distributed across FRAUD, WRONG_AMOUNT, DUPLICATE, and OTHER to simulate real-world customer complaints.
+    
+    -Lifecycle
+      
+      -OPEN: Under investigation.
+      -RESOLVED: Successfully closed.
+      -REJECTED: Request denied (e.g., if the user was mistaken).
+
+     -Time Period: All records were created within the last 6 months to maintain consistency with your transaction history.
+
+
+💡 Dashboard Use Case
+   -Transaction Detail View: When a user clicks on a "Failed" transaction, you can check this JSON to see if an active dispute exists and display its status.
+   -Notification System: Trigger an alert for the user when a dispute status changes from OPEN to RESOLVED.
+   -Admin Portal: Build a "Resolution Queue" for bank staff to view all OPEN disputes and add resolution_notes.
+
+

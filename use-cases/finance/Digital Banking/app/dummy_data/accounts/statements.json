@@ -1,0 +1,84 @@
+[
+    {
+        "receipt_id": "RCPT-1001",
+        "transaction_id": "TXN-5001",
+        "date_issued": "2026-02-15T10:00:00Z",
+        "amount": 150.75,
+        "currency": "USD",
+        "merchant": "ABC Electronics",
+        "items": [
+            {
+                "item_name": "Wireless Headphones",
+                "quantity": 1,
+                "price_per_unit": 99.99
+            },
+            {
+                "item_name": "USB-C Charger",
+                "quantity": 1,
+                "price_per_unit": 50.76
+            }
+        ],
+        "tax": 12.06,
+        "total_amount": 162.81,
+        "payment_method": "Credit Card",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440058"
+    },
+    {
+        "receipt_id": "RCPT-1002",
+        "transaction_id": "TXN-5002",
+        "date_issued": "2026-02-16T14:30:00Z",
+        "amount": 85.00,
+        "currency": "USD",
+        "merchant": "XYZ Groceries",
+        "items": [
+            {
+                "item_name": "Organic Apples",
+                "quantity": 5,
+                "price_per_unit": 3.00
+            },
+            {
+                "item_name": "Almond Milk",
+                "quantity": 2,
+                "price_per_unit": 4.50
+            },
+            {
+                "item_name": "Whole Grain Bread",
+                "quantity": 1,
+                "price_per_unit": 2.50
+            }
+        ],
+        "tax": 6.80,
+        "total_amount": 91.80,
+        "payment_method": "Debit Card",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440059"
+    },
+    {
+        "receipt_id": "RCPT-1003",
+        "transaction_id": "TXN-5003",
+        "date_issued": "2026-02-17T09:15:00Z",
+        "amount": 45.50,
+        "currency": "USD",
+        "merchant": "Cafe Delight",
+        "items": [
+            {
+                "item_name": "Cappuccino",
+                "quantity": 2,
+                "price_per_unit": 4.75
+            },
+            {
+                "item_name": "Blueberry Muffin",
+                "quantity": 1,
+                "price_per_unit": 3.50
+            },
+            {
+                "item_name": "Bagel with Cream Cheese",
+                "quantity": 1,
+                "price_per_unit": 5.00
+            }
+        ],
+        "tax": 3.64,
+        "total_amount": 49.14,
+        "payment_method": "Mobile Payment",
+        "customer_id": "550e8400-e29b-41d4-a716-446655440060"
+    }
+]

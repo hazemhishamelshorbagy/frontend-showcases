@@ -1,0 +1,92 @@
+[
+    {
+        "holding_id": "771724a7-4c14-467f-a156-469975c36799",
+        "portfolio_id": "d01c2cc0-66a2-4052-b0af-be0127280de3",
+        "asset_name": "High Yield 12M Deposit",
+        "units": 461,
+        "unit_price": 26.995,
+        "total_value": 12444.695,
+        "currency": "KWD"
+    },
+    {
+        "holding_id": "64fb9da6-34ba-420d-8d65-8c3397fe20d7",
+        "portfolio_id": "162b51d7-9f8d-4608-919b-a6efa919bc38",
+        "asset_name": "Watani Equity Fund",
+        "units": 57,
+        "unit_price": 37.058,
+        "total_value": 2112.306,
+        "currency": "KWD"
+    },
+    {
+        "holding_id": "3e2f1d4c-5b6a-4789-9c0d-e1f2a3b4c5d6",
+        "portfolio_id": "f4e5d6c7-b8a9-4dab-8c0d-e1f2a3b4c5d6",
+        "asset_name": "Tech Growth Stocks",
+        "units": 200,
+        "unit_price": 70.0,
+        "total_value": 14000.0,
+        "currency": "KWD"
+    },
+    {
+        "holding_id": "9a8b7c6d-5e4f-4321-0fed-cba987654321",
+        "portfolio_id": "a1b2c3d4-e5f6-4789-90ab-cdef12345678",
+        "asset_name": "Government Bonds 2027",
+        "units": 100,
+        "unit_price": 84.0,
+        "total_value": 8400.0,
+        "currency": "KWD"
+    },
+    {
+        "holding_id": "0f1e2d3c-4b5a-6789-0abc-def123456789",
+        "portfolio_id": "9f8e7d6c-5b4a-4321-0fed-cba987654321",
+        "asset_name": "Global ETF Fund",
+        "units": 150,
+        "unit_price": 105.0,
+        "total_value": 15750.0,
+        "currency": "KWD"
+    },
+    {
+        "holding_id": "abcdef12-3456-7890-abcd-ef1234567890",
+        "portfolio_id": "12345678-9abc-def0-1234-56789abcdef0",
+        "asset_name": "Real Estate Growth Fund",
+        "units": 80,
+        "unit_price": 210.0,
+        "total_value": 16800.0,
+        "currency": "KWD"
+    },
+    {
+        "holding_id": "11223344-5566-7788-99aa-bbccddeeff00",
+        "portfolio_id": "d01c2cc0-66a2-4052-b0af-be0127280de3",
+        "asset_name": "Corporate Bond Fund",
+        "units": 120,
+        "unit_price": 39.0,
+        "total_value": 4680.0,
+        "currency": "KWD"
+    },
+    {
+        "holding_id": "00ffeedd-ccbb-aabb-8899-776655443322",
+        "portfolio_id": "162b51d7-9f8d-4608-919b-a6efa919bc38",
+        "asset_name": "Emerging Markets Fund",
+        "units": 90,
+        "unit_price": 45.0,
+        "total_value": 4050.0,
+        "currency": "KWD"
+    },
+    {
+        "holding_id": "22334455-6677-8899-aabb-ccddeeff0011",
+        "portfolio_id": "f4e5d6c7-b8a9-4dab-8c0d-e1f2a3b4c5d6",
+        "asset_name": "Healthcare Stocks",
+        "units": 150,
+        "unit_price": 92.0,
+        "total_value": 13800.0,
+        "currency": "KWD"
+    },
+    {
+        "holding_id": "33445566-7788-99aa-bbcc-ddeeff002233",
+        "portfolio_id": "a1b2c3d4-e5f6-4789-90ab-cdef12345678",
+        "asset_name": "Municipal Bonds 2028",
+        "units": 110,
+        "unit_price": 76.0,
+        "total_value": 8360.0,
+        "currency": "KWD"
+    }
+]

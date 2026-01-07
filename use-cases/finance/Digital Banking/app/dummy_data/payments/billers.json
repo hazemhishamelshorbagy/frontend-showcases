@@ -1,0 +1,56 @@
+[
+    {
+        "biller_id": "4c836b69-f708-43a8-8ebc-c925664adaea",
+        "name": "KNET",
+        "category": "GOVERNMENT",
+        "code": "KNET-PAY"
+    },
+    {
+        "biller_id": "bde32580-04b9-45c4-9e7c-5cc2141a4145",
+        "name": "WATER",
+        "category": "UTILITY",
+        "code": "MEW-WATER"
+    },
+    {
+        "biller_id": "5ea40f4e-3f71-4aa1-a2ef-eafd4d69baf1",
+        "name": "TELECOM",
+        "category": "TELECOM",
+        "code": "ZAIN-KW"
+    },
+    {
+        "biller_id": "9f1c2d3e-4b5a-6c7d-8e9f-0a1b2c3d4e5f",
+        "name": "ELECTRICITY",
+        "category": "UTILITY",
+        "code": "KSE-ELEC"
+    },
+    {
+        "biller_id": "2a3b4c5d-6e7f-8091-2a3b-4c5d6e7f8091",
+        "name": "MOBILE POSTPAID",
+        "category": "TELECOM",
+        "code": "VIVA-KW"
+    },
+    {
+        "biller_id": "3b4c5d6e-7f80-9123-4b5c-6d7e8f901234",
+        "name": "INTERNET SERVICES",
+        "category": "TELECOM",
+        "code": "STC-KW"
+    },
+    {
+        "biller_id": "4d5e6f708192-0a1b-2c3d-4e5f-607182930405",
+        "name": "GAS COMPANY",
+        "category": "UTILITY",
+        "code": "KPC-GAS"
+    },
+    {
+        "biller_id": "5e6f7081920a-1b2c-3d4e-5f60-718293040506",
+        "name": "CABLE TV",
+        "category": "ENTERTAINMENT",
+        "code": "OSN-KW"
+    },
+    {
+        "biller_id": "6f7081920a1b-2c3d-4e5f-6071-829304050607",
+        "name": "LANDLINE PHONE",
+        "category": "TELECOM",
+        "code": "BT-KW"
+    }
+]
