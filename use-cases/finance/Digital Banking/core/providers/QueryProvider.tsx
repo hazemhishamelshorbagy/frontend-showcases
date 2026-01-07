@@ -6,9 +6,10 @@ import { useState } from "react";
 interface Props {
   children: React.ReactNode;
 }
-export const QueryProvider: React.FC<Props> = ({ children }) => {
+const QueryProvider: React.FC<Props> = ({ children }) => {
   const [queryClient] = useState(() => new QueryClient());
   return (
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   );
 };
+export default QueryProvider;
