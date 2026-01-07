@@ -41,7 +41,7 @@ This repository is built to help you:
 
 ---
 
-## 🪙 Crypto & Web3
+## 👛 Crypto & Web3
 - Crypto wallet  
 - NFT portfolio viewer  
 - Token swap interface  
