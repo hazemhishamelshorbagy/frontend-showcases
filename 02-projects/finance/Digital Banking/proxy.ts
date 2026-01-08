@@ -5,7 +5,7 @@ export async function proxy(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
     // Static test data for now
-    let userRole = 'guest'; // Try changing 'user' or 'guest' to test behavior
+    let userRole = 'user'; // Try changing 'user' or 'guest' to test behavior
 
 
     if (userRole !== 'user') {
