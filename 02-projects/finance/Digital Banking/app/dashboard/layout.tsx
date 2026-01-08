@@ -1,4 +1,4 @@
-import { DashboardHeader, DashboardFooter } from "@/components/layout";
+import { DashboardHeader, DashboardFooter } from "@/shared-components/layout";
 import React from "react";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
