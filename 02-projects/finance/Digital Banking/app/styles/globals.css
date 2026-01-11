@@ -1,26 +1,30 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-bankdash-primary: #1814F3;
+  --color-bankdash-secondary: #16DBCC;
+  --color-bankdash-tertiary: #FE5C73;
+  --color-bankdash-accent: #FC7900;
+  --color-bankdash-background: #fff;
+  --color-bankdash-text: #343C6A;
+  --color-bankdash-text-secondary: #718EBF;
+  --color-bankdash-border: #E0E0E0;
+  --color-bankdash-success: #41D4A8;
+  --color-bankdash-warning: #FFC107;
+  --color-bankdash-error: #FF4D4F;
+  --color-bankdash-chart-1: #1814F3;
+  --color-bankdash-chart-2: #FC7900;
+  --color-bankdash-chart-3: #343C6A;
+  --color-bankdash-chart-4: #FA00FF;
+  --color-bankdash-backgroundside: #E6EFF5;
+  --width-bankdash-side: 250px;
+
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@layer components {}
