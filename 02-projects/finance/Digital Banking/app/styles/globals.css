@@ -20,7 +20,10 @@
   --color-bankdash-chart-3: #343C6A;
   --color-bankdash-chart-4: #FA00FF;
   --color-bankdash-backgroundside: #E6EFF5;
+  --color-bankdash-gradiant: linear-gradient(90deg, #123288 0%, #295EEC 100%);
+  --background-bank-gradient: linear-gradient(90deg, #123288 0%, #295EEC 100%);
   --width-bankdash-side: 250px;
+  --filter-bank-primary: invert(12%) sepia(94%) saturate(6543%) hue-rotate(244deg) brightness(92%) contrast(100%);
 
 
 }
@@ -28,3 +31,28 @@
 @layer base {}
 
 @layer components {}
+
+@layer utilities {
+  .icon-active-blue {
+    filter: invert(8%) sepia(99%) saturate(6628%) hue-rotate(249deg) brightness(103%) contrast(119%);
+  }
+
+  .icon-muted {
+    filter: invert(53%) sepia(8%) saturate(1008%) hue-rotate(187deg) brightness(91%) contrast(90%);
+  }
+
+  .text-bank-gradiant {
+    background: var(--color-bankdash-gradiant);
+
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    background-size: 100%;
+    display: inline-block;
+  }
+}

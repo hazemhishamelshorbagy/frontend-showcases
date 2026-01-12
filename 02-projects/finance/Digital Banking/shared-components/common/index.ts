@@ -16,3 +16,4 @@ export {
     SidebarTrigger,
 } from '@/shared-components/common/sidebar';
 
+export { default as ActiveLink } from '@/shared-components/common/ActiveLink'

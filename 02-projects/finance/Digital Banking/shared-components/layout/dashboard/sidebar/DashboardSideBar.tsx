@@ -6,6 +6,8 @@ import {
   SidebarFooter,
   SidebarHeader,
 } from "@/shared-components/common/sidebar";
+import SideBarListDashboard from "./SideBarList";
+import { sidebarItems } from "./nav-config";
 
 const DashboardSideBar = () => {
   return (
@@ -14,7 +16,12 @@ const DashboardSideBar = () => {
       collapsible="icon"
       className="bg-bankdash-background  border-e-bankdash-backgroundside border-e  h-screen"
     >
-      <SidebarContent>test heellelle</SidebarContent>
+      <SidebarHeader className="min-h-28 p-0">
+        <SidebarHeaderDashboard />
+      </SidebarHeader>
+      <SidebarContent>
+        <SideBarListDashboard items={sidebarItems} />
+      </SidebarContent>
       <SidebarFooter />
     </Sidebar>
   );

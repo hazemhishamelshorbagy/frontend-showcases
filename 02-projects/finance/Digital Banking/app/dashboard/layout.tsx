@@ -16,7 +16,9 @@ const layout = ({ children }: { children: React.ReactNode }) => {
 
       <div className="flex flex-col grow ">
         <DashboardHeader />
-        <main className="bg-bankdash-backgroundside">{children}</main>
+        <main className="bg-bankdash-backgroundside lg:px-8 px-4">
+          {children}
+        </main>
       </div>
       {/* <DashboardFooter /> */}
     </SidebarProvider>
