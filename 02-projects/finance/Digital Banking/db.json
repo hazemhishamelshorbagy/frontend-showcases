@@ -527,62 +527,74 @@
         {
             "card_id": "572b3a83-c3ab-4a1f-a5fc-18b926c13920",
             "account_id": "5e5c4a7d-8266-43da-ab19-8bf6f9476de9",
+            "account_name": "Hazem Hisham",
             "card_number": "**** **** **** 1140",
             "expiry_date": "05/29",
             "cvv": "369",
             "status": "ACTIVE",
             "daily_spending_limit": 1434,
-            "currency": "KWD"
+            "currency": "KWD",
+            "current_balance": 5756.0
         },
         {
             "card_id": "894f2291-c4b8-476d-a4c7-53d5486be906",
             "account_id": "799882ee-e2ab-4877-a1b6-7b0adc1fd009",
+            "account_name": "Hazem Test",
             "card_number": "**** **** **** 2938",
             "expiry_date": "02/30",
             "cvv": "638",
             "status": "ACTIVE",
             "daily_spending_limit": 227,
-            "currency": "KWD"
+            "currency": "KWD",
+            "current_balance": 4756.0
         },
         {
             "card_id": "d4f5e6a7-b8c9-4d0e-9f1a-2b3c4d5e6f70",
             "account_id": "5e5c4a7d-8266-43da-ab19-8bf6f9476de9",
+            "account_name": "Test client ",
             "card_number": "**** **** **** 5678",
             "expiry_date": "11/28",
             "cvv": "123",
             "status": "BLOCKED",
             "daily_spending_limit": 500,
-            "currency": "KWD"
+            "currency": "KWD",
+            "current_balance": 3756.0
         },
         {
             "card_id": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
             "account_id": "799882ee-e2ab-4877-a1b6-7b0adc1fd009",
+            "account_name": "Test client 1",
             "card_number": "**** **** **** 9012",
             "expiry_date": "08/27",
             "cvv": "456",
             "status": "ACTIVE",
             "daily_spending_limit": 1000,
-            "currency": "KWD"
+            "currency": "KWD",
+            "current_balance": 2756.0
         },
         {
             "card_id": "f1e2d3c4-b5a6-7980-1a2b-3c4d5e6f7g8h",
             "account_id": "5e5c4a7d-8266-43da-ab19-8bf6f9476de9",
+            "account_name": "Test client 2",
             "card_number": "**** **** **** 3456",
             "expiry_date": "12/31",
             "cvv": "789",
             "status": "ACTIVE",
             "daily_spending_limit": 2000,
-            "currency": "KWD"
+            "currency": "KWD",
+            "current_balance": 1756.0
         },
         {
             "card_id": "h8g7f6e5-d4c3-b2a1-0f9e-8d7c6b5a4e3f",
             "account_id": "799882ee-e2ab-4877-a1b6-7b0adc1fd009",
+            "account_name": "Test client 3",
             "card_number": "**** **** **** 7890",
             "expiry_date": "03/26",
             "cvv": "012",
             "status": "BLOCKED",
             "daily_spending_limit": 750,
-            "currency": "KWD"
+            "currency": "KWD",
+            "current_balance": 1200.0
         }
     ],
     "customers": [

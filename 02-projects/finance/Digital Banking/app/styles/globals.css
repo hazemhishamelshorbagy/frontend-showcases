@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-bankdash-primary: #1814F3;
@@ -20,8 +19,10 @@
   --color-bankdash-chart-3: #343C6A;
   --color-bankdash-chart-4: #FA00FF;
   --color-bankdash-backgroundside: #E6EFF5;
-  --color-bankdash-gradiant: linear-gradient(90deg, #123288 0%, #295EEC 100%);
-  --background-bank-gradient: linear-gradient(90deg, #123288 0%, #295EEC 100%);
+  --color-bankdash-gradiant: linear-gradient(90deg, #0A06F4 0%, #4C49ED 100%);
+  --background-bank-gradient: linear-gradient(90deg, #0A06F4 0%, #4C49ED 100%);
+  --color-bankdash-card-primary: linear-gradient(90deg, #0A06F4 0%, #4C49ED 100%);
+  --color-bankdash-card-secondary: #DFEAF2;
   --width-bankdash-side: 250px;
   --filter-bank-primary: invert(12%) sepia(94%) saturate(6543%) hue-rotate(244deg) brightness(92%) contrast(100%);
 
@@ -30,7 +31,7 @@
 
 @layer base {}
 
-@layer components {}
+
 
 @layer utilities {
   .icon-active-blue {
@@ -54,5 +55,17 @@
 
     background-size: 100%;
     display: inline-block;
+  }
+}
+
+@layer component {
+
+  .debit-card-theme {
+    background: var(--color-bankdash-card-primary);
+
+  }
+
+  .debit-card-theme .credit-card-theme {
+    background: var(--color-white)
   }
 }

@@ -7,5 +7,8 @@ const services = "/icons/services.svg"
 const settings = "/icons/settings.svg"
 const transactions = "/icons/transactions.svg"
 const menu = "/icons/menu.svg"
-
-export { dashboard, investement, accounts, creditcards, loans, services, settings, transactions, menu }
+const chipwhite = "/icons/chipwhite.svg";
+const chipdark = "/icons/chipdark.svg";
+const logoCardlight = "/icons/logoCardDark.svg";
+const logoCarddark = "/icons/logoCardWhite.svg"
+export { dashboard, investement, accounts, creditcards, loans, services, settings, transactions, menu, chipwhite, chipdark, logoCardlight, logoCarddark }

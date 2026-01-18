@@ -16,4 +16,14 @@ export {
     SidebarTrigger,
 } from '@/shared-components/common/sidebar';
 
+export {
+    Card,
+    CardAction,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/shared-components/common/card";
 export { default as ActiveLink } from '@/shared-components/common/ActiveLink'
+export { Text } from '@/shared-components/common/TextVariant'
